@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Usage: questioneer
+# Asks the question, waits for the input, then prits the answer
+
+# QUESTION:
+question=`cat 1kolokvij.txt | grep '^[0-9]\. [A-Z]' | tr -d ':' | sort -R| head -1`
+echo "$question"
+read
+# ANSWER:
+nextQuestion=`grep "$question" -A1 questions | tail -n+2`
+sed -n "/$question/,/$nextQuestion/p" 1kolokvij.txt | head -n-1
+
