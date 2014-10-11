@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Usage: page 
+# Creates html page from markdown file and opens it with chrome.
+
+tmpFile='text.temp'
+echo '<meta charset="UTF-8">' >> "$tmpFile"
+head -n 7 text >> "$tmpFile"
+tail -n+9 text >> "$tmpFile"
+markdown "$tmpFile" > text.html &&\
+google-chrome text.html &> /dev/null &

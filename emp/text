@@ -1,51 +1,160 @@
- _____ __  __ ____  
-| ____|  \/  |  _ \ 
-|  _| | |\/| | |_) |
-| |___| |  | |  __/ 
-|_____|_|  |_|_|    
 
-#################################
+	 _____ __  __ ____  
+	| ____|  \/  |  _ \ 
+	|  _| | |\/| | |_) |
+	| |___| |  | |  __/ 
+	|_____|_|  |_|_|    
+
+=================================
 Elektronsko in Mobilno Poslovanje
-#################################
+=================================
 
-63712
-Rok Rupnik
+>[Učilnica](https://ucilnica.fri.uni-lj.si/enrol/index.php?id=65)  
+[Urnik](https://urnik.fri.uni-lj.si/timetable/2014_2015_zimski/allocations?subject=63712)
+
+>63712  
+Rok Rupnik  
 Predavanja PON 11-14
 
-prosojnice na učilnici
-2x kolokvij (začetek Decembra), dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš se na termin ki ti ustreza
+>prosojnice na učilnici  
+2x kolokvij (začetek Decembra, sredina Januarja)  
 seminarska
 
-KOLOKVIJI:
-==========
-1. Kolokvij (2011), začetek Decembra
-------------------------------------
-1.Mobilno poslovanje in mobilne aplikacije
-2.Projektno vodenje
-3.Elektronsko poslovanje v slošnem
-4.Novi trendi področja marketinga
-5.CRM
 
-Vprašanja
-Ali lahko banka uporabi bankomat kot CRM sistem a svoje stranke?
-Kje lahjo kot študent sodeluješ? GZG, B2C?
+KOLOKVIJI
+---------
+Dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš se na termin ki ti ustreza, opravljas ga na racunalniku.  V glavnem je bilo treba intuitivno sklepat(ugibat) iz tistega, kar smo slišali na predavanjih in vajah, nekaj odgovorov pa je blo podanih že v vprašanjih samih.
+
+### 1. Kolokvij, začetek Decembra
+
+#### 2010
+* kaj od naslednjega so platforme za razvoj MA(izberi 1 ali več): android, htc, windows phone 7, blackberry, windows mobile,...
+* kako se imenuje okolje za testiranje MA? emulator
+
+#### 2011
+#### Teme:
+* Mobilno poslovanje in mobilne aplikacije
+* Projektno vodenje
+* Elektronsko poslovanje v slošnem
+* Novi trendi področja marketinga
+* CRM
+
+#### Vprašanja:
+* Ali lahko banka uporabi bankomat kot CRM sistem a svoje stranke?
+* Kje lahjo kot študent sodeluješ? GZG, B2C?
+* Ali je upravičena primerjava namiznih in mobilnih aplikacij? (Upravičena/Neupravičena) Pravilen odg. neupravičena.
+* Definicija mobilne aplikacije: MA je aplikacija, ki deluje na mobilni napravi in se izvaja preko več nivojev več-nivojske arhitekture. 
+* Kaj storimo če nekdo ni navdušen nad uvedbo CRM? (Ga poskusimo navdušiti/Ga vržemo s projekta) Jst sm dal da ga poskušamo navdušiti.
+* Potem je bil za zbrat primer indirektne/direktne informacijsko podporo mobilne aplikacije. 
+* Bla so še vprašanja glede klasičnega modela MA in pa glede kontekstnega modela. Kaj sodi v kontekst ...
+* Kam spada poročanje? (To je tisti procesi, kr so našteti na koncu prve snovi.)
+* Pogodbena razmerja z zunanjimi izvajalci "zapremo" v okviru
+Izberi en odgovor:
+a po zaključku projekta
+b faze zaključka projekta
+c v okvkru skupine procesov zapiranja
+* V okviru uvajanja CRM lahko uvedemo tudi
+Izberi en odgovor:
+a administrativne ukrepe
+b Portal za stranke
+c že prej planirane ukrepe na področju prodaje
+* povezovanje mobilnih os-jev z ustreznimi IT podjetji ( ejpl -> ios ... )
+* ambulantna prodaja kaj je 
+* klasična definicija MA - kateri je glavni element
 
 
-2. Kolokvij (2013)
-------------------
-ERP, enterprise resource planing
-CRM, customer relationship management
 
+### 2. Kolokvij, sredina Januarja
+
+#### 2011
+
+* Kaj je ERP?
+
+	>ERP je IS, ki omogoča izvajanje transakcij na nivoju celotnega podjetja in poleg tega omogočajo tudi informacijsko podporo planiranju, proizvodnji, prodaji in ostalim poslovnim procesom
+
+* Kaj vsebuje struktura modulov, poleg HRM-ja?
+
+	- Finance in računovodstvo
+	- Proizvodnja
+	- Logistika
+	- Prodaja
+
+* Kaj je slabost ERP-ja?
+
+	- Dolgo obdobje uvajanja sistema
+	- Potreba po realizaciji na novo vseh vmesnikov z ostalimi aplikativnimi sistemi
+	- Potreba po visoki stopnji angažiranja poslovnih uporabnikov, predvsem ključnih, ves čas uvajanja sistema
+	- Visoki predvideni stroški projekta
+	- Večja obremenjenost ljudi zaradi vzporednega delovanja obeh sistemov
+	do konca uvajanja ERP
+	- Potreba po spreminjanju poslovnih procesov oz. nekaterih ključnih specifik in potencialne težave pri izvajanju poslovnih procesov
+
+* Kje se najbolj uporablja MA?
+
+* Kaj omogočajo kontekstno odvisne MA?
+
+	- dostavo informacij(v enostavni obliki), ki jih akter potrebuje
+	- Opravljanje mobilnosti primernih in prilagojenih storitev:
+	- v trenutku, ko to mobilni uporabnik potrebuje in
+	- na lokaciji, kjer to potrebuje
+
+* Kaj je bolj pomembno izvajanje transakcij ali transformacije? 
+
+
+* kaj je JIT (just in time)
+
+	>Just in time (JIT) is a production strategy that strives to improve a business return on investment by reducing in-process inventory and associated carrying costs. Just-in-time production method is also called the Toyota Production System. To meet JIT objectives, the process relies on signals or Kanban between different points in the process, which tell production when to make the next part. Kanban are usually 'tickets' but can be simple visual signals, such as the presence or absence of a part on a shelf. Implemented correctly, JIT focuses on continuous improvement and can improve a manufacturing organization's return on investment, quality, and efficiency. To achieve continuous improvement key areas of focus could be flow, employee involvement and quality. http://en.wikipedia.org/wiki/Just_in_time_(business)
+
+* ambulanta kaj je
+
+* ERP
+
+* HRM (še ene so zravn), nekej v povezavi s temkater je najbolj obremenjen del ko dela ERP
+
+* Večja obremenjenost ljudi zaradi vzporednega delovanja obeh sistemov
+do konca uvajanja ERP?
+
+
+#### 2013
+#### Teme:
+* ERP, enterprise resource planing
+* CRM, customer relationship management
+* (SCM, Supply chain management)
+
+#### Vprasanja:
+* DEFINICIJA PROJEKTA
+* VODENJE - MANAGEMENT
+* PMBoK
+* PORTFELJ, PROGRAM IN PROJEKT
+* VLOGE NA PROJEKTU
+* PROJEKTI, REDNE AKTIVNOSTI IN PROJECT LIFE CYCLE
+* PROCESI
+* ELEKTRONSKO POSLOVANJE (ePOSLOVANJE)
+* OBLIKE POSLOVANJA
+* GENERACIJE MARKETINGA
+* UVOD
+* ZAKAJ CRM?
+* KOMPONENTE CRM
+* STOPNJEVANJE ODNOSA MED STRANKO IN PODJETJEM
+* PREDNOSTI, PASTI IN TVEGANJA
+* STOPNJE CRM
+* KRITIČNI POGLED NA CRM
+* RAZLOGI ZA NEUSPEH IZVAJANJA CRM
+
+>[Odgovori](1kolokvij.txt)
 
 
 SEMINARSKA
-==========
-Nam je odgovoril, da smo imeli prevec kompleksen TP, nekaksno skrivanje v povzetkih je omenil, ne vem, ce tocno mislim, mogoce je mislil, da granulacija opravil ni zadosti velika (ali majhna pac?)??
+----------
+>Nam je odgovoril, da smo imeli prevec kompleksen TP, nekaksno skrivanje v povzetkih je omenil, ne vem, ce tocno mislim, mogoce je mislil, da granulacija opravil ni zadosti velika (ali majhna pac?)??
 docx je pa imel cirka 10 strani, nic posebnega. Stvar je, da smo uporabili kar nekaj MS proj server funkcionalnosti, npr. ocena stroskov projekta, forum, itd.
 
-pri nas je rekel, da je preveč mejnikov, hkrati pa da je premalo opravil, da je prekratek povzetek, projecta in project serverja nam praktično ni štel, čeprav smo tudi mi nekaj funkcionalnosti uporabili, ampak to so itak bonus točke.. kakorkoli gledamo, se nam zdi, da je čudno ocenjeval. imamo 7 strani VDP, približno 20 vrstic TP..
+>pri nas je rekel, da je preveč mejnikov, hkrati pa da je premalo opravil, da je prekratek povzetek, projecta in project serverja nam praktično ni štel, čeprav smo tudi mi nekaj funkcionalnosti uporabili, ampak to so itak bonus točke.. kakorkoli gledamo, se nam zdi, da je čudno ocenjeval. imamo 7 strani VDP, približno 20 vrstic TP..
 
+>Android aplikacija vsaj 4 aktivitije...
+http://developer.android.com/reference/android/app/Activity.html
 
+>Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru
 
 
 
