@@ -1,8 +1,7 @@
 I. PROJEKTNO VODENJE
 1. DEFINICIJA PROJEKTA:
-Projekt je začasno vzpostavljena organizacijska struktura, katere cilj je izdelati enkraten, nek
-točno določen izdelek, storitev ali rezultat.  
-Projekt ima začetek in zaključek, ki nastopi ko:
+Projekt je začasno vzpostavljena organizacijska struktura, katere cilj je izdelati enkraten, nek točno določen izdelek, storitev ali rezultat.  
+Projekt ima začetek in zaključek, ki nastopi ko::
 
 So cilji projekta izpolnjeni ALI  
 Ko postane jasno, da ciljev projekta ne bo mogoče izpolniti ALI  

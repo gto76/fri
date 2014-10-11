@@ -1,7 +1,1 @@
-#!/bin/bash
-#
-# Usage: display-page
-# Resets page and opens it with chrome.
-
-./reset-page
-google-chrome text.html &> /dev/null &
+../scripts/display-page

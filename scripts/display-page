@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Usage: display-page
+# Makes the page and opens it with chrome.
+
+courseDir=`basename $PWD`
+(cd ..
+make "$courseDir")
+google-chrome text.html &> /dev/null &

@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# Usage: create-text-html
+# Usage: create-text-html <dir> <header-path>
 # Creates text.html page from text file using markdown command. 
 
 #tmpFileText='text.temp'
 tmpFileText=`mktemp`
-cat ../scripts/header > "$tmpFileText"
-head -n7 text >> "$tmpFileText"
-tail -n+9 text >> "$tmpFileText"
-markdown "$tmpFileText" > text.html
+cat "$2" > "$tmpFileText"
+head -n7 "$1"text >> "$tmpFileText"
+tail -n+9 "$1"text >> "$tmpFileText"
+markdown "$tmpFileText" > "$1"text.html
 
