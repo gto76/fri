@@ -3,40 +3,37 @@ I. PROJEKTNO VODENJE
 Projekt je začasno vzpostavljena organizacijska struktura, katere cilj je izdelati enkraten, nek
 točno določen izdelek, storitev ali rezultat.
 Projekt ima začetek in zaključek, ki nastopi ko:
--
 
 So cilji projekta izpolnjeni ALI
 Ko postane jasno, da ciljev projekta ne bo mogoče izpolniti ALI
 Če postane jasno, da cilji projekta niso več relevantni
 
 Projekt je v časovnem smislu praviloma KRATEK.
-ENKRATEN IZDELEK: projekt gradnje neke stavbe, ki je enaka kot v prejšnjem projektu, je
-zopet projekt
-PRIMERI:
--
+ENKRATEN IZDELEK: projekt gradnje neke stavbe, ki je enaka kot v prejšnjem projektu, je zopet projekt
 
-Zasnova ali razvoj novega produkta: nov BMW serije 5
-Gradnja tovarne za izdelavo novega izdelka
-Informacijski sistem
-Podatkovni center
-Gradnja štadiona
+PRIMERI:
+
+Zasnova ali razvoj novega produkta: nov BMW serije 5  
+Gradnja tovarne za izdelavo novega izdelka  
+Informacijski sistem  
+Podatkovni center  
+Gradnja štadiona  
 
 2. PROJEKTNO VODENJE – MANAGEMENT:
 Uporaba znanj, izkušenj, orodij in tehnik v okviru projektnih aktivnosti, ki omogočajo
 izvajanje projekta in izpolnitev ciljev projekta.
 PMI: Project Management Institute
 
-3. PMBoK
-PMBok opredeljuje naslednja področja znanja:
--
+3. PMBOK
+pmbok opredeljuje naslednja področja znanja:
 
-Obvladovanje integracije in obsega projekta
-Obvladovanje časovnih parametrov in trajanja projekta
-Nadzor stroškov podjetja
-Obvladovanje kakovosti projekta in človeških virov
-Komuniciranje na projektu
-Obvladovanje tveganj
-Procurement
+Obvladovanje integracije in obsega projekta  
+Obvladovanje časovnih parametrov in trajanja projekta  
+Nadzor stroškov podjetja  
+Obvladovanje kakovosti projekta in človeških virov  
+Komuniciranje na projektu  
+Obvladovanje tveganj  
+Procurement  
 
 4. PORTFELJ, PROGRAM IN PROJEKT:
 4.1.
@@ -85,7 +82,7 @@ ki imajo v zvezi s projektom vsak svoje interese – register udeležencev vsebu
 udeležence in podatke o njih.
 
 II. ELEKTRONSKO POSLOVANJE
-1. ELEKTRONSKO POSLOVANJE (ePOSLOVANJE):
+1. ELEKTRONSKO POSLOVANJE:
 ePoslovanje je način delovanja, organiziranja ter notranjega in zunanjega sodelovanja
 organizacije (poslovni ali organizacijski sistem) podprt z dosežki informacijskih in
 telekomunikacijskih tehnologij (aplikacije, storitve, tehnološka infrastruktura).
@@ -129,13 +126,11 @@ G2B (government to business)
 Med podjetjem in državno upravo. Tudi ta oblika bo preko večje učinkovitosti podjetij
 prispevala k večji učinkovitosti družbe kot celote.
 
-III.
-
-NOVI TRENDI PODROČJA MARKETINGA
+III. NOVI TRENDI PODROČJA MARKETINGA
 
 1. GENERACIJE MARKETINGA:
-Marketing 1.0: produktna usmerjenost
-Marketing 2.0: usmerjenost k stranki
+Marketing 1.0: produktna usmerjenost  
+Marketing 2.0: usmerjenost k stranki  
 Marketing 3.0: usmerjenost k interesom celotne družbe, sodobne tehnologije omogočajo
 strankam, da postanejo aktivne pri oblikovanju novih storitev. Ta marketing zelo sloni na IT
 (analize, primerjave). Še vedno stremi v to, da maksimalno zadovolji stranko, vendar pri tem
@@ -149,7 +144,6 @@ stranko.
 
 2. ZAKAJ CRM?
 Cilji CRM:
--
 
 Podjetju oz zaposlenim zagotoviti enoten in celovit pogled nad vsemi podatki o strankah
 Omogočiti pogled na vso komunikacijo stranke s podjetjem
@@ -169,8 +163,7 @@ hiter dostop do podatkov o strankah (pretekli nakupi,
 specifične zahteve, potencialna področja zanimanja)
 3.3.
 
-TRŽENJE IN IZPOLNITEV
-PRIČAKOVANJ
+TRŽENJE IN IZPOLNITEV PRIČAKOVANJ
 Omogoča pipravo in izvedbo oglaševalskih akcij ter
 analizo odzivov nanje. Zagotavlja hiter odziv na zahteve strank in izpolnitev pričakovanj
 stranke.
@@ -203,7 +196,7 @@ usmerjeno oglaševanje zlasti kot orodja za prodajo dodatnih artiklov in nadgrad
 4.3.
 
 OBDRŽATI
-CRM kot orodje za iskanje in nagrajevanje svojih najbolj zvestih in dobičkonosnih strank,
+Crm kot orodje za iskanje in nagrajevanje svojih najbolj zvestih in dobičkonosnih strank,
 s stranko se oblikuje poseben odnos.
 
 5. PREDNOSTI, PASTI IN TVEGANJA:
@@ -251,11 +244,11 @@ zahteve. Zaposlenim omogoča hitrejši odziv na zahteve strank. Omogoča neposre
 uporabo in dostop do vse notranjih in zunanjih podatkov o strankah.
 
 7. KRITIČNI POGLED NA CRM:
-CRM ni uspel zagotoviti, da se stranki ponuja to, kar res želi/potrebuje. Vsaki stranki se je
+Crm ni uspel zagotoviti, da se stranki ponuja to, kar res želi/potrebuje. Vsaki stranki se je
 treba prilagoditi in prikupiti. Prednosti CRM so večinoma prednosti za podjetje in ne za
 stranko.
 
-CMR – sodobni trendi: potrebne spremembe v organizacijskih in poslovnih procesih, ki bodo
+Crm – sodobni trendi: potrebne spremembe v organizacijskih in poslovnih procesih, ki bodo
 omogočali, da se podjetje odzove na želje/potrebe vsake posamezne stranke.
 
 8. RAZLOGI ZA NEUSPEH IZVAJANJA CRM:
@@ -275,7 +268,7 @@ ponudb, ...
 
 SLABO PLANIRANJE
 Planiranje mora biti podprto z merljivimi cilji. Lahko so finančni, organizacijski,...
-PRIMERI: povečanje prodaje, znižanje stroškov prodaje
+primeri: povečanje prodaje, znižanje stroškov prodaje
 Slabo planiranje poveča verjetnost, da bodo fokusi usmerjeni v neprava področja.
 
 8.4.

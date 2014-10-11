@@ -3,9 +3,27 @@
 # Usage: page 
 # Creates html page from markdown file and opens it with chrome.
 
-tmpFile='text.temp'
-echo '<meta charset="UTF-8">' >> "$tmpFile"
-head -n 7 text >> "$tmpFile"
-tail -n+9 text >> "$tmpFile"
-markdown "$tmpFile" > text.html &&\
+HEADER='<meta charset="UTF-8">
+<style>
+html {
+	    margin:    0 auto;
+		    max-width: 520px;
+}
+</style>' 
+
+# create 1kolokvij.html
+tmpFileKolokvij='1kolokvij.temp'
+echo "$HEADER" > "$tmpFileKolokvij"
+cat 1kolokvij.txt | sed 's/^-$//' | \
+sed -r 's/(^[IV]+\. [ A-Ž–]+$)/## \1/' | \
+sed -r 's/(^[0-9]+\. [ A-Ž,:?–]+$)/### \1/' | \
+sed -r 's/(^[ A-Ž0-9\-]{3,}:*)/#### \1\n/' >> "$tmpFileKolokvij"
+markdown "$tmpFileKolokvij" > 1kolokvij.html
+
+# create text.html
+tmpFileText='text.temp'
+echo "$HEADER" > "$tmpFileText"
+head -n7 text >> "$tmpFileText"
+tail -n+9 text >> "$tmpFileText"
+markdown "$tmpFileText" > text.html &&\
 google-chrome text.html &> /dev/null &
