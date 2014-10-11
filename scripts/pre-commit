@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Pre-commit hook that checks if all target in makefile are up to date (if the web site is up to date). If they are not it updates them and cancels the commit. You need to make a link to this script in the .git/hooks directory (cd .git/hooks; ln -s ../../scripts/pre-commit) 
+
+make --question
+if [[ "$?" -ne 0 ]]; then
+	make
+	echo "pre-commit: Commit was aborted, because the web-page needed an update. Please rerun commit."
+	exit 1
+fi
+
+
