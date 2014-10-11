@@ -23,13 +23,40 @@ seminarska
 
 KOLOKVIJI
 ---------
-Dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš se na termin ki ti ustreza, opravljas ga na racunalniku.  V glavnem je bilo treba intuitivno sklepat(ugibat) iz tistega, kar smo slišali na predavanjih in vajah, nekaj odgovorov pa je blo podanih že v vprašanjih samih.
+Dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš se na termin ki ti ustreza, opravljas ga na racunalniku.  V glavnem je bilo treba intuitivno sklepat(ugibat) iz tistega, kar smo slišali na predavanjih in vajah, nekaj odgovorov pa je blo podanih že v vprašanjih samih. 20 prašanj je blo.... 
 
 ### 1. Kolokvij, začetek Decembra
 
 #### 2010
+#### Teme:
+* projektno vodenje, 
+* elektronsko poslovanje in 
+* CRM
+#### Vprašanja:
 * kaj od naslednjega so platforme za razvoj MA(izberi 1 ali več): android, htc, windows phone 7, blackberry, windows mobile,...
-* kako se imenuje okolje za testiranje MA? emulator
+* kako se imenuje okolje za testiranje MA? emulator  
+
+#### Vprašanja iz izpiskov:
+* definicija projekta
+* vodenje - management
+* pmbOk
+* portfelj, program in projekt
+* vloge na projektu
+* projekti, redne aktivnosti in project life cycle
+* procesi
+* elektronsko poslovanje (Eposlovanje)
+* oblike poslovanja
+* generacije marketinga
+* uvod
+* zakaj crm?
+* komponente crm
+* stopnjevanje odnosa med stranko in podjetjem
+* prednosti, pasti in tveganja
+* stopnje crm
+* kritični pogled na crm
+* razlogi za neuspeh izvajanja crm
+
+>[Odgovori](1kolokvij.html)
 
 #### 2011
 #### Teme:
@@ -65,6 +92,24 @@ c že prej planirane ukrepe na področju prodaje
 
 
 ### 2. Kolokvij, sredina Januarja
+
+#### 2010
+#### Teme:
+* ERP
+
+#### Vprašanja iz izpiskov:
+
+* Nekaj dejstev 
+* Osnovni pojmi 
+* Najboljše prakse in referenčni modeli 
+* Tipična struktura modulov ERP sistema 
+* Uvajanje ERP: tveganja, kompleksnost in stroški
+* Prednosti uvedbe ERP 
+* Slabosti uvedbe ERP 
+* Priložnosti kot posledica uvedbe ERP 
+* Tveganja uvedbe ERP 
+
+>[Odgovori](3kolokvijERP.html)
 
 #### 2011
 
@@ -129,31 +174,16 @@ do konca uvajanja ERP?
 
 * (SCM, Supply chain management)
 
-#### Vprašanja:
-* definicija projekta
-* vodenje - management
-* pmbOk
-* portfelj, program in projekt
-* vloge na projektu
-* projekti, redne aktivnosti in project life cycle
-* procesi
-* elektronsko poslovanje (Eposlovanje)
-* oblike poslovanja
-* generacije marketinga
-* uvod
-* zakaj crm?
-* komponente crm
-* stopnjevanje odnosa med stranko in podjetjem
-* prednosti, pasti in tveganja
-* stopnje crm
-* kritični pogled na crm
-* razlogi za neuspeh izvajanja crm
 
->[Odgovori](1kolokvij.html)
 
 
 SEMINARSKA
 ----------
+
+>Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru
+
+>Lahko sam lahko pa v skupini do tri!
+
 >Nam je odgovoril, da smo imeli prevec kompleksen TP, nekaksno skrivanje v povzetkih je omenil, ne vem, ce tocno mislim, mogoce je mislil, da granulacija opravil ni zadosti velika (ali majhna pac?)??
 docx je pa imel cirka 10 strani, nic posebnega. Stvar je, da smo uporabili kar nekaj MS proj server funkcionalnosti, npr. ocena stroskov projekta, forum, itd.
 
@@ -161,8 +191,6 @@ docx je pa imel cirka 10 strani, nic posebnega. Stvar je, da smo uporabili kar n
 
 >Android aplikacija vsaj 4 aktivitije...
 http://developer.android.com/reference/android/app/Activity.html
-
->Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru
 
 
 

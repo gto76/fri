@@ -12,16 +12,25 @@ html {
 </style>' 
 
 # create 1kolokvij.html
-tmpFileKolokvij='1kolokvij.temp'
+#tmpFileKolokvij='1kolokvij.temp'
+tmpFileKolokvij=`mktemp`
 echo "$HEADER" > "$tmpFileKolokvij"
 cat 1kolokvij.txt | sed 's/^-$//' | \
 sed -r 's/(^[IV]+\. [ A-Ž–]+$)/## \1/' | \
 sed -r 's/(^[0-9]+\. [ A-Ž,:?–]+$)/### \1/' | \
 sed -r 's/(^[ A-Ž0-9\-]{3,}:*)/#### \1\n/' >> "$tmpFileKolokvij"
 markdown "$tmpFileKolokvij" > 1kolokvij.html
+ 
+# create 3kolokvijERP.html
+#tmpFileKolokvij='1kolokvij.temp'
+tmpFileKolokvij2=`mktemp`
+echo "$HEADER" > "$tmpFileKolokvij2"
+cat 3kolokvijERP.txt >> "$tmpFileKolokvij2"
+markdown "$tmpFileKolokvij2" > 3kolokvijERP.html
 
 # create text.html
-tmpFileText='text.temp'
+#tmpFileText='text.temp'
+tmpFileText=`mktemp`
 echo "$HEADER" > "$tmpFileText"
 head -n7 text >> "$tmpFileText"
 tail -n+9 text >> "$tmpFileText"
