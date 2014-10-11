@@ -1,28 +1,29 @@
 # Creates webpages by converting text file in every folder to text.html using markdown parser. Any additional subpages need to be added by hand as a new rule.
 
+path = courses/
 
 # all:
 all: emp mt tpo is
 
 # emp:
-emp: emp/text.html emp/1kolokvij.html emp/3kolokvijERP.html
+emp: $(path)emp/text.html $(path)emp/1kolokvij.html $(path)emp/3kolokvijERP.html
 
-emp/1kolokvij.html : emp/1kolokvij.txt
-	cd emp; \
+$(path)emp/1kolokvij.html : $(path)emp/1kolokvij.txt
+	cd $(path)emp; \
 	./create-1kolokvij-html
 
-emp/3kolokvijERP.html : emp/3kolokvijERP.txt
-	cd emp; \
+$(path)emp/3kolokvijERP.html : $(path)emp/3kolokvijERP.txt
+	cd $(path)emp; \
 	./create-3kolokvijERP-html
 
 # mt:
-mt: mt/text.html
+mt: $(path)mt/text.html
 
 # tpo:
-tpo: tpo/text.html
+tpo: $(path)tpo/text.html
 
 # is
-is: is/text.html
+is: $(path)is/text.html
 
 
 # Generic rule for converting text file into text.html, regardles of the path 
