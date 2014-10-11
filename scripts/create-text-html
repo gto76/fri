@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Usage: create-text-html
+# Creates text.html page from text file using markdown command. 
+
+#tmpFileText='text.temp'
+tmpFileText=`mktemp`
+cat ../scripts/header > "$tmpFileText"
+head -n7 text >> "$tmpFileText"
+tail -n+9 text >> "$tmpFileText"
+markdown "$tmpFileText" > text.html
+

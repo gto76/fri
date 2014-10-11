@@ -3,13 +3,7 @@
 # Usage: reset-page 
 # Creates html page from text files using markdown command. 
 
-HEADER='<meta charset="UTF-8">
-<style>
-html {
-	    margin:    0 auto;
-		    max-width: 520px;
-}
-</style>' 
+HEADER=`cat ../scripts/header`
 
 # create 1kolokvij.html
 #tmpFileKolokvij='1kolokvij.temp'
@@ -29,10 +23,4 @@ cat 3kolokvijERP.txt >> "$tmpFileKolokvij2"
 markdown "$tmpFileKolokvij2" > 3kolokvijERP.html
 
 # create text.html
-#tmpFileText='text.temp'
-tmpFileText=`mktemp`
-echo "$HEADER" > "$tmpFileText"
-head -n7 text >> "$tmpFileText"
-tail -n+9 text >> "$tmpFileText"
-markdown "$tmpFileText" > text.html
-
+../scripts/create-text-html

@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Usage: reset-page 
+# Creates html page from text files using markdown command. 
+
+# create text.html
+../scripts/create-text-html
