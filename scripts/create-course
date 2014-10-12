@@ -22,5 +22,10 @@ echo "$titleTitleCase" >> text
 echo "$@" | sed 's/./=/g' >> text
 # make a link to a display-page script
 ln -s ../../scripts/display-page
+# insert rule to makefile
+cd ../..
+sed -i "/## rules for courses with only one page/a $acronim: \$(path)$acronim\/text.html" makefile
+# make the page
+make
 
 
