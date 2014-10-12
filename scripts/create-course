@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Usage: create-course <name>
+# Creates new course, by creating new directory in courses dir using
+# credentials. Then it also creates an empty text file with title,
+# adds a script for displaying a page, ads an entry to makefile
+# for making a page and ads a link to it to main page (index.html)
+# Needs to be called from scripts directory.
+
+# create folder
+cd ../courses
+acronim=`echo "$@" | sed 's/in//g' | sed -r 's/([a-z])[^ ]*/\1/g' | tr -d ' '`
+mkdir "$acronim"
+cd "$acronim"
+# create text file with title
+echo > text
+asciiAcronim=$(figlet $(echo "$acronim" | tr [a-z] [A-Z]))
+echo "$asciiAcronim" | sed 's/^/\t/' >> text
+echo "$@" | sed 's/./=/g' >> text
+titleTitleCase=`echo "$@" | sed -e 's/.*/\L&/' -e 's/[a-z]*/\u&/g'`
+echo "$titleTitleCase" >> text
+echo "$@" | sed 's/./=/g' >> text
+# make a link to a display-page script
+ln -s ../../scripts/display-page
+
+
