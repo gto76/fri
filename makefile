@@ -36,5 +36,5 @@ is: $(path)is/text.html
 
 # Generic rule for converting text file into text.html, regardles of the path 
 %/text.html : %/text
-	scripts/create-text-html $(dir $<) scripts/header
+	scripts/create-text-html $(dir $<) templates/head
 
