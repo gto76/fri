@@ -1,7 +1,11 @@
 <meta charset="UTF-8">
 <style>
-html {
-	margin:    0 auto;
-    max-width: 520px;
-}
+	html {
+		margin:    0 auto;
+		max-width: 520px;
+	}
+	a:link {color: blue;}
+	a:visited {color: blue;}
+	a:hover {color: blue;}
+	a:active {color: blue;}
 </style>

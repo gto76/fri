@@ -4,10 +4,10 @@ path = courses/
 COURSES := ${shell find $(path) -maxdepth 1 -mindepth 1 -type d}
 
 # all:
-all: $(notdir $(COURSES)) index.html
+all: $(notdir $(COURSES)) index.html 
 
 # if any new courses directories have been added after the index.html was last created, then create it again with updated courses list
-index.html: $(COURSES) scripts/create-index-html
+index.html: $(COURSES) scripts/create-index-html templates/index
 	cd scripts; \
 	./create-index-html
 
@@ -35,6 +35,6 @@ is: $(path)is/text.html
 
 
 # Generic rule for converting text file into text.html, regardles of the path 
-%/text.html : %/text
+%/text.html : %/text scripts/create-text-html
 	scripts/create-text-html $(dir $<) templates/head
 
