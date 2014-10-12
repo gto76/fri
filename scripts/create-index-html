@@ -11,7 +11,7 @@ echo "<blockquote>" >> ../index.html
 courses=$(basename -a $(find ../courses -maxdepth 1 -mindepth 1 -type d))
 while read -r acronim; do
 	longName=`cat ../courses/$acronim/text.html | grep '<h1>' | sed 's/<[/]*h1>//g'`
-	echo "<a href=courses/$acronim/text.html>\"$longName\"</a><br>" >> ../index.html
+	echo "<a href=courses/$acronim/text.html>$longName</a><br>" >> ../index.html
 done <<< "$courses"
 
 echo "</blockquote>" >> ../index.html

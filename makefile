@@ -7,7 +7,7 @@ COURSES := ${shell find $(path) -maxdepth 1 -mindepth 1 -type d}
 all: $(notdir $(COURSES)) index.html
 
 # if any new courses directories have been added after the index.html was last created, then create it again with updated courses list
-index.html: $(COURSES)
+index.html: $(COURSES) scripts/create-index-html
 	cd scripts; \
 	./create-index-html
 
