@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Usage: create-text-html <dir> <html-head-path>
-# Creates text.html page from text file using markdown command. 
+# Creates text.html page from text.md file using markdown command. 
 
 course=`basename "$1"`
 tmpFileText=`mktemp`
@@ -10,11 +10,11 @@ cat "$2" > "$tmpFileText"
 # add link to text file on github
 echo "<a href=\"../../index.html\">Domov</a>" >> "$tmpFileText"
 
-echo "<a href=\"https://github.com/gto76/fri/blob/gh-pages/courses/$course/text\">Uredi</a>" >> "$tmpFileText"
+echo "<a href=\"https://github.com/gto76/fri/blob/gh-pages/courses/$course/text.md\">Uredi</a>" >> "$tmpFileText"
 
 # skip first divider
-head -n7 "$1"text >> "$tmpFileText"
-tail -n+9 "$1"text >> "$tmpFileText"
+head -n7 "$1"text.md >> "$tmpFileText"
+tail -n+9 "$1"text.md >> "$tmpFileText"
 # parse
 markdown "$tmpFileText" > "$1"text.html
 

@@ -13,13 +13,13 @@ acronim=`echo "$@" | sed 's/in//g' | sed -r 's/([a-z])[^ ]*/\1/g' | tr -d ' '`
 mkdir "$acronim"
 cd "$acronim"
 # create text file with title
-echo > text
+echo > text.md
 asciiAcronim=$(figlet $(echo "$acronim" | tr [a-z] [A-Z]))
-echo "$asciiAcronim" | sed 's/^/\t/' >> text
-echo "$@" | sed 's/./=/g' >> text
+echo "$asciiAcronim" | sed 's/^/\t/' >> text.md
+echo "$@" | sed 's/./=/g' >> text.md
 titleTitleCase=`echo "$@" | sed -e 's/.*/\L&/' -e 's/[a-z]*/\u&/g'`
-echo "$titleTitleCase" >> text
-echo "$@" | sed 's/./=/g' >> text
+echo "$titleTitleCase" >> text.md
+echo "$@" | sed 's/./=/g' >> text.md
 # make a link to a display-page script
 ln -s ../../scripts/display-page
 # insert rule to makefile
