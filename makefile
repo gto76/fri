@@ -1,6 +1,6 @@
 # Creates webpages by converting text file in every folder to text.html using markdown parser. Any additional subpages need to be added by hand as a new rule.
 
-path = courses/
+path = site/
 COURSES := ${shell find $(path) -maxdepth 1 -mindepth 1 -type d}
 
 # all:

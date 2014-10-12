@@ -10,7 +10,7 @@ cat "$2" > "$tmpFileText"
 # add link to text file on github
 echo "<a href=\"../../index.html\">Domov</a>" >> "$tmpFileText"
 
-echo "<a href=\"https://github.com/gto76/fri/blob/gh-pages/courses/$course/text.md\">Uredi</a>" >> "$tmpFileText"
+echo "<a href=\"https://github.com/gto76/fri/blob/gh-pages/site/$course/text.md\">Uredi</a>" >> "$tmpFileText"
 
 # skip first divider
 head -n7 "$1"text.md >> "$tmpFileText"
