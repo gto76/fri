@@ -1,0 +1,148 @@
+﻿ERP 
+===
+
+* ERP – Enterprise Resource Planning 
+
+* PIS – Poslovodni IS 
+
+1. Nekaj dejstev 
+----------------
+
+* ERP sisteme ima večina koorporacij 
+	
+* ERP sistemi so aktualni tudi za SME 
+
+* ERP sistemi vplivajo na nabavne verige 
+
+* ERP sistemi so zeelooooo dragi 
+
+* ERP sistemi so spremenili paradigmo IS za velika podjetja 
+
+2. Osnovni pojmi 
+----------------
+
+* ERP je IS, ki omogoča izvajanje transakcij na nivoju celotnega podjetja in poleg tega omogočajo tudi informacijsko podporo planiranju, proizvodnji, prodaji in ostalim poslovnim procesom 
+
+* Nekaj tipičnih karakteristik ERP: 
+	- Zgrajeni so modularno 
+	- Podpirajo in integrirajo večino poslovnih procesov 
+	- Imajo centralno podatkovno bazo, v kateri ni podvajanja 
+
+* Nekaj znanih ERP sistemov: 
+	- SAP 
+	- Microsoft Navision 
+	- Phanteon (slovensko podjetje Datalab) 
+
+
+3. Najboljše prakse in referenčni modeli 
+----------------------------------------
+
+* Uvajanje ERP posredno pomeni uvajanje najboljših praks 
+
+* Referenčni modeli za posamezne panoge 
+
+
+4. Tipična struktura modulov ERP sistema 
+----------------------------------------
+
+* Finance in računovodstvo, Proizvodnja, Logistika, Prodaja, HRM 
+
+
+5. Uvajanje ERP: tveganja, kompleksnost in stroški
+--------------------------------------------------
+
+
+6. Prednosti uvedbe ERP 
+-----------------------
+
+* Integracija podatkov: skupna baza podatkov in šifranti. 
+
+* Celovito čiščenje podatkov ob prehodu na nov sistem 
+
+* Standardizirana rešitev, ki omogoča prilagajanje procesov najboljšim praksam (best practices) in referenčnimi modeli 
+
+* Standardizacija in izboljšave na področju izvajanja poslovnih procesov 
+
+* Enostavnejše vzdrţevanje in zagotavljanje novih verzij rešitve 
+
+* Skladnost z mednarodnimi standardi računovodskega področja, kar mora zagotoviti zunanji izvajalec – sistemski integrator 
+
+* Možnost zamenjave sistemskega integratorja tudi ţe med uvajanjem, še zlasti pa v okviru vzdrţevanja 
+
+* Zaradi možnosti zvišanja učinkovitosti poslovanja bo ob ustrezni prenovi poslovnih procesov moţna optimizacija kadrov 
+
+* Zanesljivost delovanja 
+
+* Preglednost in sledljivost poslovanja 
+
+* Boljša podpora revizijam in kontrolingu 
+
+
+7. Slabosti uvedbe ERP 
+----------------------
+
+* Dolgo obdobje uvajanja sistema 
+
+* Potreba po realizaciji na novo vseh vmesnikov z ostalimi aplikativnimi sistemi 
+
+* Potreba po visoki stopnji angaţiranja poslovnih uporabnikov, predvsem ključnih, ves čas uvajanja sistema 
+
+* Visoki predvideni stroški projekta 
+
+* Večja obremenjenost ljudi zaradi vzporednega delovanja obeh sistemov do konca uvajanja ERP 
+
+* Potreba po spreminjanju poslovnih procesov oz. nekaterih ključnih specifik in potencialne teţave pri izvajanju poslovnih procesov 
+
+* Potreba po konverziji in migraciji podatkov 
+
+* Relativno visoka naloţba 
+
+* Dodatni stroški zaradi vzporednega delovanja dveh sistemov (stari IS in ERP) do konca uvajanja ERP 
+
+* Zahtevnejše prilagajanje uporabnikov na nov način dela 
+
+8. Priložnosti kot posledica uvedbe ERP 
+---------------------------------------
+
+* Moţnost prenove poslovnih procesov 
+
+* Večja učinkovitost zaradi standardizacije poslovnih procesov, prilagojenih najboljšim praksam 
+
+* Laţje obvladovanje in nadzor nad poslovnimi procesi 
+
+9. Tveganja uvedbe ERP 
+----------------------
+
+* Premajhna podpora vodstva in drugih na različnih nivojih organizacij 
+
+* Stabilnost poslovanja organizacije v prehodnem obdobju 
+
+* Nepripravljenost na projekt uvedbe 
+
+* Neusklajenost projekta s strategijo podjetja 
+
+* Neustrezno vodenja projekta 
+
+* Neustrezne priprava celotnega projekta in zagotovitve zbiranja zahtev 
+
+* Neustrezno usposabljanje internih informatikov in ostalih zaposlenih za sodelovanje v projektu 
+
+* Neustrezna vloga informatikov v podjetju 
+
+* Odsotnost celovitega in podrobnega plana prehoda na novi sistem 
+
+* Izbor ustreznega sistemskega integratorja 
+
+* Nizka pripravljenost na spremembe 
+
+* Neuspešen management sprememb ob prehodu na novi sistem, npr. zaradi vzporedne uporabe dveh sistemov in spreminjanja nekaterih ključnih poslovnih procesov 
+
+* Moţnost teţav ob vzporednem delovanju obeh sistemov v prehodnem obdobju 
+
+* Post ERP depresija (ob prehodu »v ţivo«) 
+
+* Kompleksnost integracije starega IS in ERP v času prehodnega obdobja in izdelava začasnih vmesnikov 
+
+* Uporabniki sistema ne bodo (dobro) sprejeli 
+
+* Nestabilna organizacijska struktura v podjetjih lahko ogrozi uspešnost projekta 

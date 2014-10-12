@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# creates 3kolokvijERP.html
+
+HEADER=`cat ../scripts/header`
+
+tmpFileKolokvij2=`mktemp`
+echo "$HEADER" > "$tmpFileKolokvij2"
+cat 3kolokvijERP.txt >> "$tmpFileKolokvij2"
+markdown "$tmpFileKolokvij2" > 3kolokvijERP.html
+
