@@ -17,12 +17,12 @@ Elektronsko in Mobilno Poslovanje
 
 ```timetable
  PON ; 10-11 ; Laboratorij za e-medije ; govorilne DJ 
-     ; 11-14 ; P22  ; predavanja  
- TOR ;  8-10 ; PR09 ; vaje 
-	 ; 10-12 ; PR06 ; vaje
-	 ; 14-16 ; PR10 ; vaje
-	 ; 16-18 ; PR16 ; vaje
- PET ; 13-15 ; PR09 ; vaje
+     ; 11-14 ; P22  				   ; predavanja  
+ TOR ;  8-10 ; PR09 				   ; vaje 
+	 ; 10-12 ; PR06 				   ; vaje
+	 ; 14-16 ; PR10 				   ; vaje
+	 ; 16-18 ; PR16 				   ; vaje
+ PET ; 13-15 ; PR09 				   ; vaje
 ```
 
 >prosojnice na učilnici  
