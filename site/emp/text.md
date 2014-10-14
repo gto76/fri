@@ -30,13 +30,31 @@ Elektronsko in Mobilno Poslovanje
 seminarska
 
 
+SEMINARSKA
+----------
+
+>Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru
+
+>Lahko sam lahko pa v skupini do tri!
+
+>Nam je odgovoril, da smo imeli prevec kompleksen TP, nekaksno skrivanje v povzetkih je omenil, ne vem, ce tocno mislim, mogoce je mislil, da granulacija opravil ni zadosti velika (ali majhna pac?)??
+docx je pa imel cirka 10 strani, nic posebnega. Stvar je, da smo uporabili kar nekaj MS proj server funkcionalnosti, npr. ocena stroskov projekta, forum, itd.
+
+>pri nas je rekel, da je preveč mejnikov, hkrati pa da je premalo opravil, da je prekratek povzetek, projecta in project serverja nam praktično ni štel, čeprav smo tudi mi nekaj funkcionalnosti uporabili, ampak to so itak bonus točke.. kakorkoli gledamo, se nam zdi, da je čudno ocenjeval. imamo 7 strani VDP, približno 20 vrstic TP..
+
+>Android aplikacija vsaj 4 aktivitije...
+http://developer.android.com/reference/android/app/Activity.html
+
+
+
 KOLOKVIJI
 ---------
-Dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš se na termin ki ti ustreza, opravljas ga na racunalniku.  V glavnem je bilo treba intuitivno sklepat(ugibat) iz tistega, kar smo slišali na predavanjih in vajah, nekaj odgovorov pa je blo podanih že v vprašanjih samih. 20 prašanj je blo.... 
 
 ### 1. Kolokvij, začetek Decembra
 
 #### 2010
+>Dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš se na termin ki ti ustreza, opravljas ga na racunalniku.  V glavnem je bilo treba intuitivno sklepat(ugibat) iz tistega, kar smo slišali na predavanjih in vajah, nekaj odgovorov pa je blo podanih že v vprašanjih samih. 20 prašanj je blo.... 
+
 #### Teme:
 * projektno vodenje, 
 * elektronsko poslovanje in
@@ -184,23 +202,6 @@ do konca uvajanja ERP?
 
 * (SCM, Supply chain management)
 
-
-
-
-SEMINARSKA
-----------
-
->Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru
-
->Lahko sam lahko pa v skupini do tri!
-
->Nam je odgovoril, da smo imeli prevec kompleksen TP, nekaksno skrivanje v povzetkih je omenil, ne vem, ce tocno mislim, mogoce je mislil, da granulacija opravil ni zadosti velika (ali majhna pac?)??
-docx je pa imel cirka 10 strani, nic posebnega. Stvar je, da smo uporabili kar nekaj MS proj server funkcionalnosti, npr. ocena stroskov projekta, forum, itd.
-
->pri nas je rekel, da je preveč mejnikov, hkrati pa da je premalo opravil, da je prekratek povzetek, projecta in project serverja nam praktično ni štel, čeprav smo tudi mi nekaj funkcionalnosti uporabili, ampak to so itak bonus točke.. kakorkoli gledamo, se nam zdi, da je čudno ocenjeval. imamo 7 strani VDP, približno 20 vrstic TP..
-
->Android aplikacija vsaj 4 aktivitije...
-http://developer.android.com/reference/android/app/Activity.html
 
 
 
