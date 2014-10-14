@@ -92,10 +92,12 @@ SEMINARSKA
 >Na vajah se potem formira skupine, skupina izbere temo, skupina pripravi opis projekta. Izbrat bo potrebno tudi vodjo, katrega minimalno pooblastilo je oddaja projekta na ucilnici. Vsak naj zapisuje svoj prispevek: kaj je dodal pri predlogu in kaj je sprogramiral (ce sta isti del sprogramirala dva ali vec, naj se zapisejo odstotki). Oddaja od ideje se 3 tedne - 10. november do 23:55 (ponedeljek zvecer, pdf). 
 
 * **11, 14, 17 november**, predstavitve, 10 minut vsaka skupina z diskusijo  
-* **15. december**, vmesna predstavitev, tezave na karere smo naleteli...    
+
+* **15. december**, vmesna predstavitev, tezave na karere smo naleteli...   
+
 * **4, 11 januar, nedelja**, zakljucek. Aplikacija in dokumentacija, predstavitev 15 minut ali manj (12,13,16 jan - pon prva skupina teden prej predstvitev.)  
 
-* **5. do 18.(ned) januar**, porocilo o delu (svoj pogled) - individualno. 
+* **5. do 18.(ned) januar**, porocilo o delu (svoj pogled) - individualno.   
 
 * **20. januar**, zadnja predstavitev!!!
 
