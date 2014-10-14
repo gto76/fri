@@ -7,15 +7,24 @@
 parseTimetableLine() {
 	# tokenize the line
 	IFS=';' read -ra c <<< "$line"
-	# split the time field (needs to be in form of 'start-end')
-	start=`echo ${c[1]} | sed 's/-.*//'`
-	end=`echo ${c[1]} | sed 's/.*-//'`
+	# split the time field (needs to be in form of 'start-end'),
+	# if it contains a '-'
+	if [[ -n `echo ${c[1]} | grep '-'` ]]; then
+		start=`echo ${c[1]} | sed 's/-.*//'`
+		sep='-'
+		end=`echo ${c[1]} | sed 's/.*-//'`
+	else
+		start=${c[1]}
+		sep=""
+		end=""
+	fi
+		
 	# print the tokens inside the table
     echo "	<tr>
         <td><strong>${c[0]}</strong></td>
         <td style=\"width:10px\"></td>
         <td align=right>$start</td>
-        <td>-</td>
+        <td>$sep</td>
         <td align=right>$end</td>
         <td></td>
         <td align=center>${c[2]}</td>
