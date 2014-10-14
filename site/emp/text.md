@@ -39,8 +39,9 @@ Dokaj lahek, za prijavo rešit kviz na učilnici, rabis geslo kviza, prijaviš s
 #### 2010
 #### Teme:
 * projektno vodenje, 
-* elektronsko poslovanje in 
-* CRM
+* elektronsko poslovanje in
+* CRM  
+
 #### Vprašanja:
 * kaj od naslednjega so platforme za razvoj MA(izberi 1 ali več): android, htc, windows phone 7, blackberry, windows mobile,...
 * kako se imenuje okolje za testiranje MA? emulator  
