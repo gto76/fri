@@ -13,12 +13,17 @@ Elektronsko in Mobilno Poslovanje
 [Urnik](https://urnik.fri.uni-lj.si/timetable/2014_2015_zimski/allocations?subject=63712)
 
 >[Rok Rupnik](http://www.fri.uni-lj.si/si/rok-rupnik)  
-Predavanja PON 11-14, P22
+[David Jelenc](http://www.fri.uni-lj.si/si/david--jelenc)  
 
->[David Jelenc](http://www.fri.uni-lj.si/si/david--jelenc)  
-Vaje TOR 8-10 PR09, 10-12 PR06, 14-16 PR10, 16-18 PR16,  
-PET 13-15, PR09   
-Govorilne ure PON 10-11, Laboratorij za e-medije	
+```timetable
+ PON ; 10-11 ; Laboratorij za e-medije ; govorilne DJ 
+     ; 11-14 ; P22  ; predavanja  
+ TOR ;  8-10 ; PR09 ; vaje 
+	 ; 10-12 ; PR06 ; vaje
+	 ; 14-16 ; PR10 ; vaje
+	 ; 16-18 ; PR16 ; vaje
+ PET ; 13-15 ; PR09 ; vaje
+```
 
 >prosojnice na učilnici  
 2x kolokvij (začetek Decembra, sredina Januarja)  

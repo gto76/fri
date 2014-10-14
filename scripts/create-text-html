@@ -14,7 +14,8 @@ echo "<a href=\"https://github.com/gto76/fri/blob/gh-pages/site/$course/text.md\
 
 # skip first divider
 head -n7 "$1"text.md >> "$tmpFileText"
-tail -n+9 "$1"text.md >> "$tmpFileText"
+scripts/parse-timetables "$1"text.md  | tail -n+9  >> "$tmpFileText"
+
 # parse
 markdown "$tmpFileText" > "$1"text.html
 

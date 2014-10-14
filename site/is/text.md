@@ -13,12 +13,15 @@ Informacijski Sistemi
 [Urnik](https://urnik.fri.uni-lj.si/timetable/2014_2015_zimski/allocations?subject=63714)  
 
 >[Damjan Vavpotič](http://www.fri.uni-lj.si/si/damjan-vavpotic/)  
-Predavanja SRE 12-15, P22  
-Govorilne ure PON 9-10, R2.60  
-
 >[Slavko Žitnik](http://www.fri.uni-lj.si/si/slavko-zitnik/)  
-Vaje TOR 10-12 PR09, 17-19 K1129, ČET 8-10 PR16,  
-PET 8-10 PR16, 11-13 PR16  
 
-
+```timetable
+ PON ;  9-10 ; R2.60 ; govorilne DV 
+ TOR ; 10-12 ; PR09	 ; vaje
+     ; 17-19 ; K1129 ; vaje
+ SRE ; 12-15 ; P22	 ; predavanja
+ ČET ;  8-10 ; PR16	 ; vaje
+ PET ;  8-10 ; PR16	 ; vaje
+     ; 11-13 ; PR16	 ; vaje
+```
 

@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# Usage: parse-timetables <file>
+# Secrhes the file for ```timetable ... ``` section and parses
+# the contents of the section into nice html table
+
+parseTimetableLine() {
+	# tokenize the line
+	IFS=';' read -ra c <<< "$line"
+	# print the tokens inside the table
+    echo "	<tr>
+        <td><strong>${c[0]}</strong></td>
+        <td style=\"width:10px\"></td>
+        <td align=center>${c[1]}</td>
+        <td></td>
+        <td align=center>${c[2]}</td>
+        <td></td>
+        <td align=left>${c[3]}</td>
+    </tr>"
+}
+
+main() {
+	insideTimetable="false"
+
+	IFS_SAVE="$IFS"
+	IFS=""
+	while read -r line; do
+		if [[ -n $(echo "$line" | grep '^```timetable') ]]; then
+			insideTimetable="true"
+			echo '><table>'
+			continue
+		fi
+		if [[ -n $(echo "$line" | grep -P '^``` *$') ]]; then
+			insideTimetable="false"
+			echo '</table>'
+			continue
+		fi
+		# print or parse line
+		if [[ "$insideTimetable" == "false" ]]; then
+			echo "$line"
+		else
+			parseTimetableLine
+		fi
+	done < "$1"
+	IFS="$IFS_SAVE"
+}
+
+main "$@"
+
