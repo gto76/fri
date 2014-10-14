@@ -10,8 +10,12 @@ echo "<blockquote>" >> ../index.html
 # adds list of links to the individual courses:
 courses=$(basename -a $(find ../site -maxdepth 1 -mindepth 1 -type d))
 while read -r acronim; do
-	longName=`cat ../site/$acronim/text.html | grep '<h1>' | sed 's/<[/]*h1>//g'`
-	echo "<a href=site/$acronim/text.html>$longName</a><br>" >> ../index.html
+	acronimCap=`echo "$acronim" | tr [a-z] [A-Z]`
+	longName=`cat ../site/$acronim/text.html | \
+				grep '<h1>' | \
+				sed 's/<[/]*h1>//g'`
+	echo "<a href=site/$acronim/text.html>$acronimCap - $longName</a><br>" \
+			>> ../index.html
 done <<< "$courses"
 
 echo "</blockquote>" >> ../index.html
