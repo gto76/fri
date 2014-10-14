@@ -15,15 +15,27 @@ Tehnologija Programske Opreme
 >[Alenka Kavčič](http://www.fri.uni-lj.si/si/alenka-kavcic/)
 
 ```timetable
- PON ;  8-10 ; PR12 ; vaje		
- TOR ;  8-11 ; P03	; predavanja	
-     ; 14-16 ; PR06 ; vaje		
- PET ;  7-9  ; PR12 ; vaje
+ PON ;  8:30-10:00 ; PR12 ; vaje		
+ TOR ;  8:00-11:00 ; P03  ; predavanja	
+     ; 14:15-15:45 ; PR06 ; vaje		
+ PET ;  7:30-9:00  ; PR12 ; vaje
 ```
+
+>Pogoj za opravljane izpita so:  
+
+>* naloge na vajah  
+* seminarska (3-6 studentov v skupini, vsak student ima tudi predstavitev na vajah)  
 
 
 VAJE
 ----
+### 2014
+>#### 13 tednov:
+
+>* 3x **predstavitev nalog**, vsaka predstavitev ocenjena  
+* 2x **neobvezne** (tretje vaje - mrezno nacrtovanje)  
+* 8x **delo na vajah**, oddat na ucilnici, oceni se z opravljeno/neopravljeno, protrebno oddati 75%, kar je vsaj 6 nalog  
+
 ### 2012
 
 >3 seminarske (poročilo)..
@@ -48,6 +60,68 @@ Tak vrstni red kot je že izbran
 >oj kaksno porocilo ste mel dons za oddat na vajah?
 
 
+SEMINARSKA
+----------
+
+### Ocena
+
+>5% **ideja**
+
+>35% **opis projekta**
+
+>* priprava opisa
+* predstavitev predloga
+
+>60% **izvedba projekta**
+
+>* oddaja projekta in aplikacije
+* predstavitev rezultatov
+
+>**+**individualno porocilo, kaj je bilo ok, kaj ni, kaj si naredil, koliko procentov cesa si naredil ce sta delala dva na isti stvari (zapisuj si sproti)
+
+
+### Roki
+* **druge vaje**, oddat kratko idejo za projekt (individualno). do ponedeljka zvecer:
+	- naslov
+	- akromim
+	- povzetek
+	- kaj bomo nardil ne kako
+	- nic tehnologij
+	- (komu je namenjena)  
+
+>Na vajah se potem formira skupine, skupina izbere temo, skupina pripravi opis projekta. Izbrat bo potrebno tudi vodjo, katrega minimalno pooblastilo je oddaja projekta na ucilnici. Vsak naj zapisuje svoj prispevek: kaj je dodal pri predlogu in kaj je sprogramiral (ce sta isti del sprogramirala dva ali vec, naj se zapisejo odstotki). Oddaja od ideje se 3 tedne - 10. november do 23:55 (ponedeljek zvecer, pdf). 
+
+* **11, 14, 17 november**, predstavitve, 10 minut vsaka skupina z diskusijo  
+* **15. december**, vmesna predstavitev, tezave na karere smo naleteli...    
+* **4, 11 januar, nedelja**, zakljucek. Aplikacija in dokumentacija, predstavitev 15 minut ali manj (12,13,16 jan - pon prva skupina teden prej predstvitev.)  
+
+* **5. do 18.(ned) januar**, porocilo o delu (svoj pogled) - individualno. 
+
+* **20. januar**, zadnja predstavitev!!!
+
+### Razpis
+* razpis ministerstva, aplikacija za izobrazevanje
+* nepotrebne obrazce izpustimo
+* preberi: besedilo razpisa, ocenjevalni list (to dobijo ocenjevalci), opis projekta
+* potrebno izpolnit razpisni obrazec 1. (podatki o projektu) Pogledali bomo na drugih vajah. 
+* "ni se treba strasno drzat projekta"
+* (standard/smernice WCAD 2.0 kako naresti spletno aplikacijo dostopno za invalide)
+* konzorcij pomeni skupina
+
+### Aplikacija
+* spletna, mobilna ali oboje
+* priporocljiv android (android sdk -> adt (android development kit)
+	- predmet EMP - spletna ucilnica -> android
+	- developers.android.com
+	- android.fri-uni.lj
+	- ucilnica -> poletna sola androida
+	- (redmine)
+* lahko je domorodna ali
+* hibridna (en source sa vec platform):
+	- PhoneGap, AppCelerator, Kivy
+	- Uporaba JavaScripta, HTML5 in CSS
+	- Spletna aplikacija
+	- Spletna aplikacija ki se prevede v native (tezave pri specificnih problemih!)
 
 
 KOLOKVIJI
@@ -130,5 +204,9 @@ IZPIT
 
 >no pol boš naredil brez večjih problemov! je bil izpit popolnoma pisan tako, da če si vsaj kaj delal v praksi nasploh si ga lahko naredil bp. tak da te to ne rabi skrbet
 
-
+### Dodatna Literatura
+* S. L. Pfleeger, J. M. Atlee: Software Engineering, Theory and Practice, Fourth Edition, Pearson Prentice Hall, 2010
+* I. Sommerville: Software Engineering, Ninth Edition, Pearson Addison Wesley, 2010
+* K. Schwaber, M. Beedle: Agile Software Development with SCRUM, Prentice Hall, 2002
+* K. Beck: Extreme Programming Explained, Addison-Wesley, 2004
 
