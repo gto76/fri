@@ -17,11 +17,11 @@ Informacijski Sistemi
 
 ```timetable
  PON ;  9-10 ; R2.60 ; govorilne DV 
- TOR ; 10-12 ; PR09	 ; vaje
+ TOR ; 10-12 ; PR09  ; vaje
      ; 17-19 ; K1129 ; vaje
- SRE ; 12-15 ; P22	 ; predavanja
- ČET ;  8-10 ; PR16	 ; vaje
- PET ;  8-10 ; PR16	 ; vaje
-     ; 11-13 ; PR16	 ; vaje
+ SRE ; 12-15 ; P22   ; predavanja
+ ČET ;  8-10 ; PR16  ; vaje
+ PET ;  8-10 ; PR16  ; vaje
+     ; 11-13 ; PR16  ; vaje
 ```
 

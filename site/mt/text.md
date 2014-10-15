@@ -17,7 +17,7 @@ Multimedijske Tehnologije
 
 ```timetable
  PON ; 13-16 ; P03  ; predavanja 
- SRE ; 14	 ;	    ; govorilne MM 
+ SRE ; 14    ;      ; govorilne MM 
      ;  8-10 ; PR16 ; vaje
      ; 14-16 ; PR07 ; vaje
 ```

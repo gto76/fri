@@ -19,3 +19,10 @@ To update the html pages run `make` command in projects' root. To create a new s
 Templates directory contains a file called `head` that defines few css properties that get added to all the pages. It also contains a file called `index` that contains the content of the main page (links to the subpages get generated automatically).
 
 In `scripts` directory there is also a `pre-commit` hook that can be linked to `.git/hooks` directory, in order for git to check if site is up to date before every commit. It will run `make` command and abort the commit it if is not.
+
+### How To Run:
+```bash
+$ git clone https://github.com/gto76/fri.git
+$ cd fri
+$ google-chrome index.html
+```

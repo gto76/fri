@@ -19,7 +19,7 @@ Tehnologija Programske Opreme
 	 ; 10:30 	   ; R2.29 ; govorilne
  TOR ;  8:00-11:00 ; P03   ; predavanja	
      ; 14:15-15:45 ; PR06  ; vaje		
- PET ;  7:30-9:00  ; PR12  ; vaje
+ PET ;  7:30- 9:00 ; PR12  ; vaje
 ```
 
 >Pogoj za opravljane izpita so:  
