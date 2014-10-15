@@ -21,7 +21,7 @@ Templates directory contains a file called `head` that defines few css propertie
 In `scripts` directory there is also a `pre-commit` hook that can be linked to `.git/hooks` directory, in order for git to check if site is up to date before every commit. It will run `make` command and abort the commit it if is not.
 
 ### How To Run:
-```bash
+```
 $ git clone https://github.com/gto76/fri.git
 $ cd fri
 $ google-chrome index.html
