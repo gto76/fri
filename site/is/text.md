@@ -13,6 +13,7 @@ Informacijski Sistemi
 [Urnik](https://urnik.fri.uni-lj.si/timetable/2014_2015_zimski/allocations?subject=63714)  
 
 >[Damjan Vavpotič](http://www.fri.uni-lj.si/si/damjan-vavpotic/)  
+>Gregor Weiss
 >[Slavko Žitnik](http://www.fri.uni-lj.si/si/slavko-zitnik/)  
 
 ```timetable
