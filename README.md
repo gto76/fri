@@ -22,6 +22,7 @@ In `scripts` directory there is also a `pre-commit` hook that can be linked to `
 
 ### How To Run:
 ```
+$ sudo apt-get install markdown
 $ git clone https://github.com/gto76/fri.git
 $ cd fri
 $ google-chrome index.html
