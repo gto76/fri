@@ -9,7 +9,7 @@
 Tehnologija Programske Opreme
 =============================
 
->[Učilnica]()  
+>[Učilnica](https://ucilnica.fri.uni-lj.si/course/view.php?id=43)  
 >[Urnik](https://urnik.fri.uni-lj.si/timetable/2014_2015_zimski/allocations?subject=63732)  
 
 >[Alenka Kavčič](http://www.fri.uni-lj.si/si/alenka-kavcic/)
@@ -27,6 +27,7 @@ Tehnologija Programske Opreme
 >* naloge na vajah  
 * seminarska (3-6 studentov v skupini, vsak student ima tudi predstavitev na vajah)  
 
+>Tekom semestra sta dva kolokvija (termini so navedeni pri izpitnih rokih). Kolokvija sta pisna, čas pisanja pa je od 45 do 60 minut. Oba kolokvija skupaj morate pisati pozitivno (povprečje obeh kolokvijev vsaj 50%), da se vam priznata namesto pisnega izpita. Pri tem morate na vsakem kolokviju dobiti vsaj 30% točk.
 
 VAJE
 ----
