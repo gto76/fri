@@ -1,0 +1,17 @@
+6. Sistem za snemanje/strimanje (audio) predavanj, ce ga poganja vec
+ljudi hkrati se avtomatsko izbere najboljsi signal, sinkanje
+s prosojnicami...
+
+-------------------------
+
+* naslov: Sistem za zvočno beleženje predavanj
+* akromim: SZBP
+
+* povzetek (kaj bomo nardil ne kako, nic tehnologij): Preko spletne strani lahko kdorkoli v učilnici posname predavanja...
+
+
+Spletna aplikacija bo omogočala snemanje predavanj. Zvočni tok se bo v živo prenašal na splet, skupaj z informacijo o trenutni strani prosojnice, če bodo le-te prenešena na sistem. Če bo več uporabnikov hkrati snemalo predavanje, bo sistem v živo izbiral najkvalitetnejši signal. Ta funkcija bo omogočala, da se bodo vprašanja obiskovalcev bolje slišala.
+Sistem bo pregleden in enostaven za uporabo. Prizadevali se bomo do bo razumliv in uporaben že za otroke prvih razredov osnovnih šol, hkrati pa tudi za starejše uporabnike, ki imajo manj izkušenj z uporabo modernih tehnologij.
+
+
+

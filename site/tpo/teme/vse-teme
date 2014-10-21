@@ -1,0 +1,81 @@
+JAKA
+
+Sam sem mislil, da bi naredili aplikacijo, ki bi imela znrana vsa maturitetna vprašanja
+in odgovore. Poleg baze vprašanj in odgovorov, bi generirala tudi kviz z naključnimi
+vprašanji glede na izbran predmet. 
+
+Jst mam en dodatj k predlogu od Aleša - loh bi nardili kr anatomina človeka. Pa začnemo z osnovami (glava, okončine trup) pol pa vsak level bl podrobno - večje kosti, mišice... In tk vse bl podrobno. Dejanjako bi bla kr dobra aplikacijo z dost širko bazo folka (medicinci, farmacevt... U name it) in še na več ražličnih področjih.
+
+Pa še en predlog - moja punca študira umetnostno zgodovino. Na tem študiju so tok prjazni, da jim ne dajo slik umetniških del na usb ključku, ampak morjo vse sami najt. Tkda je zbrala kr ornk bazo umetniških del in arhitekturnih znamenitosti. Zdj pa lih naredimo app, k bi mogli študenti prepoznavat umet. spomenike, jih umeščat v obdobja, navajat avtorje, lokacije, kjer se nahajajo... Praktično vse, kar morjo študenti zna... No, skor vse 
+
+=====
+
+ROBERT
+
+App za planiranje skupinskega učenja -  podobno kot fb eventi.  lahko narediš dogodek -  kraj in čas, predmet. Ljudje se lahki pofočkajo komentirajo.  Po koncu eventa se lahko naredi povzetek.
+Dodatki: live chat, forum style teme za predmete itd...
+
+=====
+
+ALES
+
+Maš CPP za izpit in bi loh naredu app k bi utrjeval znanje cpp, user bi znotri appa dejansk šou na potovanje in bi cel flow app zgledu kokr da se pele po cesti in mu mečeš probleme nvm križišče tak pa tak pa reš zadevo, ko user uspešno reši situacijo se premakne po poti naprej kjer nvm naleti na oviro z desne in jo more obvozt (žmiguc, pogled ipd). Samo predlog, moj mnenje je d je mrsker od vaših boljši, če ma pa kdo kkšn flash d bi se pa to dal ful awesome narest pa nj pove
+ 
+========
+
+ALES
+
+Moja bejba ma en predmet za nevrologijo in se morjo vsak kvadratn milimetr možganov na pamet naučit, mi je padl na pamet d bi se loh naredu app k maš možgane pač 3d model in pol klikneš en predel in ti vn vrže kva je to pa blabla...zgleda fancy pa vse hah...
+
+Mogoče bi sam opozoru d djmo zbrat tak predlog k se bo dal podatke dobit, js sm kar se cpp skeptičn k nevem kje bi dobil vse predpise pa naloge pa vse. 
+
+Isto bi reku za tist eyetracking od jureta, ful mi je hud pa hi tech sam js tega ne znam narest. Mogoče bi se blo fajn še pogovort o kkšnih predlogih zarad mene se loh jutr dobimo na kavi in zmenmo. D ne bomo mel ful lep pa dobr app, a ubistvu se bomo pol leta jebal dobit podatke. Konc koncev pa loh nardimo enga daemona k ti na smartphonu ne pusti odpirat fb, snapchat, instagrama dokler je aktiviran d se "učiš" :)
+
+
+========
+ALES
+3d mozgani
+deamon 
+cpp
+
+ROBERT
+skupinsko ucenje
+
+JAKA
+maturitetna vprasanja
+anatomia cloveka
+umetnostna zgodovina
+
+=======
+
+JURE
+
+X kronoloskega prikaza zgodovine nekega obmocja
+X eye movement 
+
+converter iz ascii grafov
+Aplikacija za razvoj intuicije,
+Moras narest top 10 listo,
+App za dostop do diplomskih nalog
+Sistem za snemanje/strimanje (audio) predavanj
+
+======
+
+Uau, ta deamon ki ti ne pusti odpirat appaov bi bil čisti killer app!
+Aleš, a bi se ti dalo mal poguglat do kake mere je to izvedljivo?
+
+Od mojih idej se meni zdi Sistem za snemanje najboljši kompromis med uporabnostjo, zahtevnostjo,... in podobno kot eyetracking ima en mal bol hi-tech feature (avtomatsko izbiranje najboljsega signala), ki pa ni nujen za aplikacijo da deluje (tudi ce se izbere najslabsi signal se bo se vedno slisal), plus kul bi blo ker bi lahko testrirali app na samih predavanjih.
+
+še par lienej:
+* Se totalno strinjam z Alešom da bo brez veze, če bomo moral mi na koncu na veliko vnašat podatke, da bo app uporaben...
+* Glede zahtevnosti problema/algoritmov, so moje izkušnje, da težji (manj raziskan) ko bo problem, manj se bo od nas zahtevalo kar se tiče spoliranosti končne rešitve, hkrati pa bo motivacija tolk večja..
+* Eye tracking se mi zdi hud kompromis, ker bi aplikacija še vedno lahko delala, tudi če bi eyetracking odpovedal, ali deloval zelo napol (bi se pač samo beležilo na kateri strani dokumenta smo bili koliko časa in bi bila pač cela stran/del strani obarvana...) Mene bol skrbi ali bi bili sposobni dost zanesljivo prikazat pdf. 
+* Ascii grafi mi nekako ne pašjo v ta web/mobile koncept vaj, so bolj command line tool/parser, edino na netu bi lahko bila delujoča predstavitev (na levi text editor, na desni zgenerirana slikca, veliki render gumb)... ne vem, lahko da se motim. (Sam problem se mi zdi ful privlačen, ker je dobro definiran, rešitev ni odvisna od okolja...)
+* Zgodovina območja sem ziher da bi bla avtomatsko zgenerirana slikca neesteska/nepregledna, tko da bi bil app edino uporaben če bi omogočal nadaljno editiranje (vektorska grafika), se pravi komplikacije...
+
+
+
+
+
+
+

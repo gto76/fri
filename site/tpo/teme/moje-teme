@@ -1,0 +1,55 @@
+
+1. Aplikacija ki spremlja tvoj eye movement in belezi pri katerih delih dokumenta si se koliko casa zadrzeval, ter generira heatmap, da vidis kaj moras se predelati.
+
+2. Aplikacija za razvoj intuicije, nekaksen reinforced learner za ljudi...
+Na primer obstaja job v piscancji industriji, kjer locujes piscance na moske in zenske,
+in razlike pri enih sortah so tako majhne, da je edini nacin da se jih naucis locevati tak, da za tabo stoji mojster in te popravi ob napacni razvrstitvi... Konkretno: slika pacijenta, ali ima neko bolezen, zvok motorja, ali ima neko konkretno tezavo...
+
+3. Moras narest top 10 listo, glede na predmet ki se ga ucis...
+Naprimer izpit iz antike -> lista top 10 grkov iz cetrtega stoletja.
+Sele ko koncas lahko primerjas svojo listo z drugimi.
+
+4. App za dostop do diplomskih nalog (world wide), ali vsaj naslovov, razdeljenih po podrocjih / temah / podtemah...
+
+5. App za generiranje kronoloskega prikaza zgodovine nekega obmocja..
+Koncni izdelek naj bi bil nekaj taksnega: https://flic.kr/p/pGLQgE
+input pa nekaj taksnega:
+	;bulgarija    ;srbija       ;turcija
+1299;2.bul-ces    ;kral-srbija  ;otomansko-ces
+1389;2.bul-ces    ;otomansko-ces;otomansko-ces
+1396;otomansko-ces;otomansko-ces;otomansko-ces
+
+6. Sistem za snemanje/strimanje (audio) predavanj, ce ga poganja vec
+ljudi hkrati se avtomatsko izbere najboljsi signal, sinkanje
+s prosojnicami...
+
+7. Converter iz ascii grafov, kemijskih struktur, miselnih vzorcev, notnih zapisov,... v png slike. Uporabno za seminarske. En moj primer: https://github.com/gto76/ascii-git-graph-to-png 
+
+-------------
+
+ps: Za nobeno od idej se nisem preveril ali ze obstaja kaksna resitev,
+ali je zastonj/open source, in ce ze obstaja, ali bi se jo dalo izboljsati...
+
+--------------
+
+Oporne tocke s katerimi sem si pomagal:
+
+Informacije so lahko dostopne, kaj je vredno znati:
+* Hitro googlanje
+* Splosna izobrazba / siroki koncepti / zivljenske izkusnje
+* Prepoznavanje bullshita
+* Znati komunicirati / posredovati ideje
+* Ustvariti si sistem v glavi, s pomocjo katerega potem 
+  lahko isces nove inovativne povezave
+
+Vseeno je tezko nadomestiti dobro knjigo in ulozen cas
+	-> aplikacija ki te drzi on track (1)
+
+Znanje mojstrov je tezko prenosljivo (2)
+
+Problem je najti kaj nas sploh zanima (4)
+
+
+
+
+

@@ -29,6 +29,15 @@ Elektronsko in Mobilno Poslovanje
 2x kolokvij (začetek Decembra, sredina Januarja)  
 seminarska
 
+VAJE
+----
+>svoji racunalniki
+>dve seminarske
+>3 vaje za windows phone
+>6 vaj za android
+>ocena se primerno otezi
+>75% prisotnost obvezna
+
 
 SEMINARSKA
 ----------

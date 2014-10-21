@@ -9,7 +9,7 @@
 Informacijski Sistemi
 =====================
 
->[Učilnica](https://ucilnica1011.fri.uni-lj.si/course/category.php?id=36)   
+>[Učilnica](https://ucilnica.fri.uni-lj.si/course/view.php?id=63)  
 [Urnik](https://urnik.fri.uni-lj.si/timetable/2014_2015_zimski/allocations?subject=63714)  
 
 >[Damjan Vavpotič](http://www.fri.uni-lj.si/si/damjan-vavpotic/)  
@@ -27,6 +27,8 @@ Informacijski Sistemi
      ; 11-13 ; PR16  ; vaje
 ```
 
+>50 % ocene predstavlja praktično delo študenta, ki se ocenjuje preko seminarskih nalog, 50 % ocene predstavlja pisni izpit, ki ga je mogoče izdelati tudi s sprotnim delom v obliki kolokvijev.
+
 VAJE
 ----
 Udeležba na laboratorijskih vajah mora biti vsaj 75%.
@@ -43,3 +45,10 @@ Programska oprema je dosegljiva preko programa [MSDNAA](http://www.fri.uni-lj.si
 V kolikor imate z dostopom do MSDNAA težave pišite na email: msdnaa@fri.uni-lj.si
 
 
+KOLOKVIJ
+--------
+* Dva kolokvija...  
+* Kviz na eUčilnici  
+* Vprašanja iz snovi predavanj (teorija)  
+* Za uspešno opravljen izpit je potrebno pri obeh kolokvijih doseči vsaj 50% točk.  
+* Predvidena termina (začetek decembra, sredina januarja)  
