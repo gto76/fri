@@ -2,7 +2,7 @@
 #
 # creates 3kolokvijERP.html
 
-HEADER=`cat ../scripts/header`
+HEADER=`cat ../../templates/head`
 
 tmpFileKolokvij2=`mktemp`
 echo "$HEADER" > "$tmpFileKolokvij2"

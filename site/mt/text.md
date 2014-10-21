@@ -102,6 +102,86 @@ kup meta podatkov
 >19.1 - predstavitev na predavanjih
 
 
+IZPIT
+-----
+
+### 2012
+
+Tole se je pojavilo lani na izpitu, tako da bodo verjetno na kolokviju tudi podobna vprašanja in bolj podrobna, ker je manj snovi.
+
+Vprašanja na izpitu 2011
+Lematizacija
+bilinearna interpolacija
+mpeg-1
+kje pride do izgube pri kodiranju jpeg
+tf-idf
+kaj je ideja efektov, ki uporabljajo zakasnitve
+kaj je gama korekcija, kje se uporablja
+kako lahko kodiramo z mediano
+kako lahko spremenimo višino signala z vzorci...
+kaj so I, B P slike pri mpeg-1 kodiranju
+kater barvni prostor zajema vse barve, ki jih vidimo in za kaj se uporablja
+kaj lahko poveš o magnitudi ... vzorca (3 poševne bele pikce v črnem kvadratu)
+kaj so vizualne besede
+kako bi uporabil beseda1 AND beseda2 pri obrnjenem indeksiranju.....
+Levensteinova razdalja
+še neki o mpeg-1
+kaj je vektor premika/razdalj 
+
+
+lemantizacija besed
+Zakaj je pri videu YUV in YcbCr
+Kako amplituda vpliva na glasnost
+Najvecja izguba pri JPEG kodiranju (kater korak)
+Kaj je identifikacija avdio posnetka
+tb-itf
+Zakaj se uporablja fitriranje z mediano
+Gama korekcija
+Magnituta slikca s 3emi diagonalnimi belimimi kockicami
+Kako izmerimo višino tona
+Kaj so vizualne besede
+Efekti z zakasnitvijo – osnovna ideja
+kako sestavis pri indeksiranju beseda1 AND beseda2
+Vektor gibanja pri videu
+Levensteinova razdalja
+kaj je bipolarna interpolacija pri transformaciji slik
+MPEG-1 kodiranje, kako določimo št. bitov za kvantizacijo
+Kater barvni spekter prikaze vse barve
+
+Kaj je lematizacija besedila?
+Kaj je gama korekcija?
+Kaj je CMYK in kaj YCbCr? 
+Kaj pri MPEG-1 pomeni B, P in I?
+Kako je zvok odvisen od amplitude?
+Kaj določa ton zvoka?
+Kaj zazna vektor gibanja?
+Kako se amplituda (glasnost) zvoka spreminja skozi čas?
+Obrnjen indeks:
+Kaj je Levenshteinova razdalja?
+Kaj je tf-idf?
+
+----------
+
+Edit: Vprašanja
+
+1. Kaj je smisel entropijskega kodiranja? kaj potrebujemo, da lahko kodiramo?
+2. Z Huffmanom zakodiraj "KALAMARCKI"
+3. Kako izvedemo iskanje Beseda1 OR Beseda2 (ilustriraj s primerom)
+4. Podana je bila tabela, 3 besede in v kolikih dokumentih se posamezna pojavi (10, 100, 1000). Število vseh dokumentov je 10 000. Koliko je idf?
+5. Podano je bilo neko zaporedje cifer, ki se kodira z RLE. Koliko je kompresijsko razmerje?
+6. Kaj je BOM?
+7. Narisana je bila shema obiskovanja spletnih strani in podana verjetnost obiska. Izračunaj PageRank.
+8. Zakaj v vektorske prostoru evklidska razdalja ni dobra?
+9. Iskanje v vektorskem prostoru
+10. Razlika med text code in text encoding (tole ne vem če sem si prav zapomnila. Se kdo spomni?)
+11. Podani sta bili dve besedi (ne spomnim se kateri). Koliko je Levenshteinova razdalja? Opiši kako jo izračunamo.
+12. Kaj je pozicijski indeks?
+13. Kako bi iskali po*ka? (nekaj takega)
+14. Kaj smisel/bistvo pri LZ77?
+
+Tole so vprašanja po spominu. 
+
+----------
 
 
 

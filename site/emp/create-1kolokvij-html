@@ -2,7 +2,7 @@
 #
 # creates 1kolokvij.html
 
-HEADER=`cat ../scripts/header`
+HEADER=`cat ../../templates/head`
 
 #tmpFileKolokvij='1kolokvij.temp'
 tmpFileKolokvij=`mktemp`
