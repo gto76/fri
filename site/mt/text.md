@@ -183,6 +183,26 @@ Tole so vprašanja po spominu.
 
 ----------
 
+Evo vprašanja, ki sem jih imela (je pa bilo več verzij kolokvija, tako kot pri prvem):
+
+1. Kaj je vzorčenje in kaj je kvantizacija?
+2. Kakšno vlogo ima LFO pri sintezi zvoka?
+3. Kakšne tone dobimo če imamo pri sintezi s frekvenčno modulacijo razmerje celih števil C:M?
+4. Katere lastnosti ima dober zvočni prstni odtis?
+5. Kako indeksira Shazam?
+6. Kaj je prostorski efekt: odmev prostora?
+7. Kako na zvok vpliva efekt distorzije?
+8. Kakšno je razmerje med močjo signala in šumom, če kvantizacijo izvajamo z 8 biti? Kako smo prišli do te številke?
+9. Kaj so to harmoniki oz. alikvotni toni? Kako vplivajo oz. kako vezo majo z osnovnimi frekvencami?
+10. Zakaj za kodiranje/sintezo govora uporabljamo drugačen algoritem kot za ostale zvoke?
+11. Kako pri LPC vemo če gre za nezvočnik ali zvočnik?
+12. Kakšne so lahko posledice če analogne zvoke neposredno vzorčimo? Kako jih odpravimo?
+
+Vprašanja so seveda po spominu zato niso čisto dobesedno taka, se razume 
+
+-----------
+
+
 
 
 

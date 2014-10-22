@@ -29,6 +29,8 @@ Informacijski Sistemi
 
 >50 % ocene predstavlja praktično delo študenta, ki se ocenjuje preko seminarskih nalog, 50 % ocene predstavlja pisni izpit, ki ga je mogoče izdelati tudi s sprotnim delom v obliki kolokvijev.
 
+>Predavanja so bila. Šli pa smo čez uvodni pdf. Profesor se mi zdi zlo uredu, se ga da fino poslušat, dobro govori :) povedal je tudi da predavanja niso obvezna in se da predmet opravit s tem da predelaš le pdfje.
+
 VAJE
 ----
 Udeležba na laboratorijskih vajah mora biti vsaj 75%.
@@ -52,3 +54,8 @@ KOLOKVIJ
 * Vprašanja iz snovi predavanj (teorija)  
 * Za uspešno opravljen izpit je potrebno pri obeh kolokvijih doseči vsaj 50% točk.  
 * Predvidena termina (začetek decembra, sredina januarja)  
+
+### 2013
+1.kolokvij bo 4.12.ob 18.00
+
+

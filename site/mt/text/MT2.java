@@ -6,6 +6,8 @@ import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.List;
+import java.util.Set;
 
 public class MT2 {
 	static boolean RUN_QUERY = true;
@@ -17,13 +19,18 @@ public class MT2 {
 	public static void main(String[] args) 
 			throws FileNotFoundException {
 
-		String path = ".";
+		String path = "/home/minerva/fri/site/mt/text";
 		File[] files = getFiles(path);
+		System.out.println("files length = " + files.length);
 		fillIndex(files);
+		
 
 		if (RUN_QUERY) {
 			List<String> results = queryWord("banana");
-			System.out.println(results);
+			//System.out.println(results);
+			for (String a : results) {
+				System.out.println("#a");
+			}
 		}
 		
 		if (RUN_INTERSECTION) {
@@ -34,7 +41,7 @@ public class MT2 {
 		
 	}
 
-	File[] getFiles(String path) {
+	static File[] getFiles(String path) {
 		File direktorij = new File(path);
 		File[] files = direktorij.listFiles(new FileFilter() {
 			@Override
@@ -42,9 +49,11 @@ public class MT2 {
 				return pathname.getName().endsWith(".txt");
 			}
 		});
+		return files;
 	}
 
-	void fillIndex(File[] files) {
+	static void fillIndex(File[] files) throws 
+			FileNotFoundException {
 		for (File f : files) {
 			Scanner sc = new Scanner(f);
 			while(sc.hasNext()) {
@@ -62,7 +71,7 @@ public class MT2 {
 		}
 	}
 
-	List<String> queryWord(String word) {
+	static List<String> queryWord(String word) {
 		word = word.toLowerCase();
 		List<String> results = new ArrayList<String>();
 		if (index.containsKey(word)) {
@@ -74,7 +83,7 @@ public class MT2 {
 		return results;
 	}
 
-	TreeSet<String> intersection(String[] query) {
+	static TreeSet<String> intersection(String[] query) {
 		TreeSet<String> rezultat = new TreeSet<String>();
 		if(index.containsKey(query[0])) {
 			TreeSet<String> relzultat = index.get(query[0]);
