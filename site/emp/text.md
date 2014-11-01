@@ -38,6 +38,18 @@ VAJE
 >ocena se primerno otezi
 >75% prisotnost obvezna
 
+### Android Setup
+>Eclipse ADT  
+SDK Manager -> verzija 19  
+Virtualna naprava -> Link v prosojnicah, pospesevalnik  
+>>CPU/ABI ARM -> Intel Atom  
+>>128 MB internal storage  
+>>SD: 16 MB  
+>>no skin, no camera  
+
+>Zelimo da LogCat Loger laufa (da dela println -> tag.system.out)  
+Debuging: DDMS: Posiljanje fake koordinat,...
+
 
 SEMINARSKA
 ----------

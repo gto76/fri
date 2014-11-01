@@ -46,6 +46,37 @@ Programska oprema je dosegljiva preko programa [MSDNAA](http://www.fri.uni-lj.si
 
 V kolikor imate z dostopom do MSDNAA težave pišite na email: msdnaa@fri.uni-lj.si
 
+### Vaje 2
+
+#### Hranjenje prenosa stanja
+##### Del requesta in responsa
+* Parametri v naslovu 
+
+			button_click -> redirect(url-z-parametri)
+* Piškotki 
+
+			hc = new Cookie(); 
+			response.cookies.add(hc)
+* Lastnost viewState - del htmlja
+
+			// set:
+			viewState.add(IME, PRIIMEK)
+			// get:
+			foreach (stateItem si in viewState.values)
+				si.value.ToString();
+
+##### Na voljo povsod v kodi
+* Sejna spremenljivka
+
+			// set:
+			Session["naziv"] = "grof"
+			// get:
+			if (Session["naziv"] != null)
+				Label1.Text = (String) Session["Naziv"];
+* Aplikacijska spremenljivka - vidna v vseh sejah
+
+			Application["naziv"] = "grof"...
+
 
 KOLOKVIJ
 --------

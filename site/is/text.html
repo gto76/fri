@@ -143,6 +143,49 @@ Gregor Weiss <br />
 
 <p>V kolikor imate z dostopom do MSDNAA težave pišite na email: msdnaa@fri.uni-lj.si</p>
 
+<h3>Vaje 2</h3>
+
+<h4>Hranjenje prenosa stanja</h4>
+
+<h5>Del requesta in responsa</h5>
+
+<ul>
+<li><p>Parametri v naslovu </p>
+
+<pre><code>    button_click -&gt; redirect(url-z-parametri)
+</code></pre></li>
+<li><p>Piškotki </p>
+
+<pre><code>    hc = new Cookie(); 
+    response.cookies.add(hc)
+</code></pre></li>
+<li><p>Lastnost viewState - del htmlja</p>
+
+<pre><code>    // set:
+    viewState.add(IME, PRIIMEK)
+    // get:
+    foreach (stateItem si in viewState.values)
+        si.value.ToString();
+</code></pre></li>
+</ul>
+
+<h5>Na voljo povsod v kodi</h5>
+
+<ul>
+<li><p>Sejna spremenljivka</p>
+
+<pre><code>    // set:
+    Session["naziv"] = "grof"
+    // get:
+    if (Session["naziv"] != null)
+        Label1.Text = (String) Session["Naziv"];
+</code></pre></li>
+<li><p>Aplikacijska spremenljivka - vidna v vseh sejah</p>
+
+<pre><code>    Application["naziv"] = "grof"...
+</code></pre></li>
+</ul>
+
 <h2>KOLOKVIJ</h2>
 
 <ul>
