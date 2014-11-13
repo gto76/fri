@@ -437,3 +437,235 @@ Kaj je tf-idf?</p>
 <p>Vprašanja so seveda po spominu zato niso čisto dobesedno taka, se razume </p>
 
 <hr />
+
+<h1>Predavanja</h1>
+
+<hr />
+
+<h2>TEXT</h2>
+
+<h3>TF-IDF</h3>
+
+<blockquote>
+  <p>Term frequency - inverse docujment frequency</p>
+</blockquote>
+
+<h3>OBRNJEN INDEX</h3>
+
+<blockquote>
+  <p>Omogoca boolove izraze: w1 and w2</p>
+</blockquote>
+
+<h3>ISKANJE V VEKTORSKEM PROSTORU</h3>
+
+<ul>
+<li>Druga metoda, ne uporablja obrnjenega indexa.</li>
+<li><p>Ne nujno eksaktno iskanje, iscemo podobnosti:  </p>
+
+<pre><code>       | D1  D2  D3
+---------------------
+car    |  1   2   0
+drive  |  0   1   0
+banana |  0   1   0
+</code></pre></li>
+<li>V tabelo lahko shranjujemo tudi tf-idf.</li>
+</ul>
+
+<h4>Evklidska Razdalja</h4>
+
+<ul>
+<li><p>Ni dobra izbira ker dokumenti z razlicnimi besedami so dalec narazaen, ceprov je del besed skupnih.  </p>
+
+<pre><code>             _________
+dist(a,b) = √Σ(ai-bi)²
+</code></pre></li>
+</ul>
+
+<h4>Kosinusna Razdalja</h4>
+
+<ul>
+<li>Kot med vektorji, boljse, dot produkt</li>
+</ul>
+
+<h3>LATENT SEMANTIC INDEXING</h3>
+
+<ul>
+<li>Vsak dokument je predstavljen z temo -> manj dimenzij</li>
+<li><p>Kako izluscimo temo:  </p>
+
+<pre><code>        | D1  D2  D3  D4              
+--------------------------
+nogomet |  2   1   0   0        
+messi   |  3   2   0   0   = X  
+hrana   |  0   0   1   2
+solata  |  0   0   1   1
+==========================
+nogomet |  5   3   0   0
+hrana   |  0   0   2   3
+</code></pre></li>
+</ul>
+
+<h4>SVD - Singularni razcep</h4>
+
+<ul>
+<li>[U,S,V] = svd(X)</li>
+</ul>
+
+<hr />
+
+<h2>STISKANJE</h2>
+
+<ul>
+<li><p>Redundantnost podatkov</p>
+
+<ul>
+<li>Casovna: video, staticni kadri</li>
+<li>Prostorska: velika podrocja enake barve/kontrasta</li>
+<li>Spektralna: spremembe v barvi manj ocitne kot v kontrastu</li>
+<li>Zaznavna: frekfenc blizu glasne frekfence ne slisimo</li>
+</ul></li>
+<li><p>Stiskanje ponavljanj</p></li>
+<li><p>RLE: 1111222333333 => (1,4),(2,3),(3,6)</p></li>
+</ul>
+
+<h3>ENTROPIJSKA KODIRANJA</h3>
+
+<ul>
+<li>Veckrat kot se simbol pojavi, krajso kodno besedo ima.</li>
+</ul>
+
+<h4>Shanonov Teorem (1948)</h4>
+
+<ul>
+<li>Optimalna dolzina I(x) = -log₂P(x)</li>
+</ul>
+
+<blockquote>
+  <p>AABACABAAB <br />
+P(A) = 6/10 <br />
+P(B) = 3/10 <br />
+P(C) = 1/10  </p>
+
+<p>I(A) = -log₂6/10 * 0.6 = 0.74b * 0.6 = 0.4b <br />
+I(B) = -log₂3/10 * 0.3 = 1.74b * 0.3 = 0.6b <br />
+I(C) = -log₂1/10 * 0.1 = 3.32b * 0.1 = 0.3b <br />
+Σ = 1.3b  </p>
+</blockquote>
+
+<ul>
+<li>Se pravi najbolj optimalno kodiranje uporabi 1.3 bita na simbol, pod predpostavko neodvisnosti med pojavitvami simbolov.</li>
+</ul>
+
+<h4>Primer 1 - Siva slika</h4>
+
+<blockquote>
+  <p>x: {0...255} <br />
+P(Xi) = 1/256 </p>
+</blockquote>
+
+<pre><code>    ₂₅₅
+    -Σ 1/256 * -log₂1/256 =
+     ⁰
+    -1 * -8 = 8b -&gt; najboljse mozno kodiranje
+</code></pre>
+
+<h4>Primer 2 - Siva slika, polovica pixlov ima vrednost 0</h4>
+
+<blockquote>
+  <p>x: {0...255} <br />
+P(0) = 0.5 <br />
+P(Xi) = 0.5/255  </p>
+</blockquote>
+
+<pre><code>                      ₂₅₅
+    -0.5 * -log₂0.5 + -Σ 1/255 * -log₂1/255 =
+                       ⁰
+    0.5 + -4.49 ≈ 5b -&gt; najboljse mozno kodiranje
+</code></pre>
+
+<h4>Kako Zakodirati</h4>
+
+<blockquote>
+  <p>Predpone besed morajo biti enolicne.</p>
+</blockquote>
+
+<h4>Hufmanov Algoritem</h4>
+
+<ul>
+<li>Doloci kode tako da se proba cim bolj priblizat optimalnemu kodiranju.</li>
+<li>Najbolj standardno kodiranje, prisotno v vseh formatih, ponavadi nekje na koncu (zip, jpeg).</li>
+</ul>
+
+<h4>Aritmeticno Kodiranje</h4>
+
+<ul>
+<li>Kot biblija na meterski palici z zarezo</li>
+<li>H264: Lahko namesto Hufmana</li>
+<li>Ne da bitne kode za vsak posamezen simbol, ampak skupino sibolov</li>
+</ul>
+
+<h3>UNIVERZALNE KODE</h3>
+
+<ul>
+<li>V naprej dolocena kodiranja (abeceda,...)</li>
+</ul>
+
+<h4>Rice</h4>
+
+<ul>
+<li>Manjse stevilke so bolj verjetne</li>
+<li>FLAC, UTF-8: Razlicno stevilo bajtov za razlicen znak</li>
+<li>Waveform - zvok: verjetnost vrednosti sempla ima peak na 0 in potem pada proti maxu in minu.</li>
+</ul>
+
+<h3>KODIRANJE S SLOVARJI</h3>
+
+<ul>
+<li>Entropijska Kodiranja: predvideva se medsebojno neodvisnost simbolov.</li>
+<li>Neodvisnost ne drzi v tekstu, zvoku, slikah...
+<ul>
+<li>Podzaporedja se velikokrat pojavijo -> dobijo key</li>
+<li>Zip (LZ77)</li>
+<li>Ustvarimo slovar in</li>
+<li>kodiramo kot pare: (koda, polozaj) -> (4,0),(3,5)</li>
+</ul></li>
+<li>Dinamicni slovar: slovar se zgenerira glede na vsebino</li>
+</ul>
+
+<h4>LZ77 (Zip)</h4>
+
+<ul>
+<li>Lampel-Ziv 1977
+ABCDCDABCEBCDA
+ABCD|  |  |
+    v  v  +->(9,3,A)
+(2,2,A)(6,2,E)</li>
+<li>Nikoli ne gremo prevec nazaj gledat (buffer omejen na nekaj kilobajtov) (+ look ahead buffer)</li>
+<li>Prvi kilobajt ponavadi pustimo nezakodiran</li>
+<li>Kje je slovar? Slovar je impliciten, nimamo explicitne tabele!</li>
+</ul>
+
+<h4>LZW</h4>
+
+<ul>
+<li>Lampel-Ziv-Welsch</li>
+<li>Mal boljsi</li>
+<li>Gif, Compress</li>
+<li>Sproti gradi slovar</li>
+</ul>
+
+<h3>KODIRANJE RAZLIK</h3>
+
+<ul>
+<li>Razlike med sempli pri zvoku -> oblika grafa enaka kot pri razporeditvi vrednosti samo  se bolj spicast. -> Entropija je manjsa (nakljucen signal ima najvecjo entropino)</li>
+<li>Entropija 16 bitnega zvoka je priblizno 14 bitov (Hufman)</li>
+<li>FLAC -> 1:2 ≈ 8b</li>
+<li><p>Entropija razlik semplov za 16 bitni signal je priblizno 11 bitov</p></li>
+<li><p>Siva slika (8b):</p>
+
+<ul>
+<li>Entropija skor 8b</li>
+<li>Entropija razlik ≈ 4.5b</li>
+</ul></li>
+<li>FLAC poskusa naredit funkcijo za nopovedovanje oblike funkcije (LPC - Linear Predictive Coding)</li>
+</ul>

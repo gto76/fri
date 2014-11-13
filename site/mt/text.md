@@ -200,7 +200,191 @@ Evo vprašanja, ki sem jih imela (je pa bilo več verzij kolokvija, tako kot pri
 
 Vprašanja so seveda po spominu zato niso čisto dobesedno taka, se razume 
 
------------
+
+----------
+Predavanja
+==========
+
+----
+TEXT
+----
+
+### TF-IDF
+>Term frequency - inverse docujment frequency
+
+### OBRNJEN INDEX
+>Omogoca boolove izraze: w1 and w2
+
+### ISKANJE V VEKTORSKEM PROSTORU
+* Druga metoda, ne uporablja obrnjenega indexa.
+* Ne nujno eksaktno iskanje, iscemo podobnosti:  
+
+		       | D1  D2  D3
+		---------------------
+		car    |  1   2   0
+		drive  |  0   1   0
+		banana |  0   1   0
+* V tabelo lahko shranjujemo tudi tf-idf.
+
+#### Evklidska Razdalja
+* Ni dobra izbira ker dokumenti z razlicnimi besedami so dalec narazaen, ceprov je del besed skupnih.  
+
+		             _________
+		dist(a,b) = √Σ(ai-bi)²  
+
+#### Kosinusna Razdalja
+* Kot med vektorji, boljse, dot produkt
+
+### LATENT SEMANTIC INDEXING
+* Vsak dokument je predstavljen z temo -> manj dimenzij
+* Kako izluscimo temo:  
+
+		        | D1  D2  D3  D4              
+		--------------------------
+		nogomet |  2   1   0   0        
+		messi   |  3   2   0   0   = X  
+		hrana   |  0   0   1   2
+		solata  |  0   0   1   1
+		==========================
+		nogomet |  5   3   0   0
+		hrana   |  0   0   2   3
+
+#### SVD - Singularni razcep
+* [U,S,V] = svd(X)
+
+---------
+STISKANJE
+---------
+
+* Redundantnost podatkov
+	- Casovna: video, staticni kadri
+	- Prostorska: velika podrocja enake barve/kontrasta
+	- Spektralna: spremembe v barvi manj ocitne kot v kontrastu
+	- Zaznavna: frekfenc blizu glasne frekfence ne slisimo
+
+* Stiskanje ponavljanj
+
+* RLE: 1111222333333 => (1,4),(2,3),(3,6)
+
+
+### ENTROPIJSKA KODIRANJA
+
+* Veckrat kot se simbol pojavi, krajso kodno besedo ima.
+
+#### Shanonov Teorem (1948)
+
+* Optimalna dolzina I(x) = -log₂P(x)
+
+>AABACABAAB  
+P(A) = 6/10  
+P(B) = 3/10  
+P(C) = 1/10  
+
+>I(A) = -log₂6/10 * 0.6 = 0.74b * 0.6 = 0.4b  
+I(B) = -log₂3/10 * 0.3 = 1.74b * 0.3 = 0.6b  
+I(C) = -log₂1/10 * 0.1 = 3.32b * 0.1 = 0.3b  
+Σ = 1.3b  
+
+* Se pravi najbolj optimalno kodiranje uporabi 1.3 bita na simbol, pod predpostavko neodvisnosti med pojavitvami simbolov.
+                                       
+#### Primer 1 - Siva slika
+>x: {0...255}  
+P(Xi) = 1/256 
+
+		₂₅₅
+		-Σ 1/256 * -log₂1/256 =
+		 ⁰
+		-1 * -8 = 8b -> najboljse mozno kodiranje
+
+#### Primer 2 - Siva slika, polovica pixlov ima vrednost 0
+>x: {0...255}  
+P(0) = 0.5  
+P(Xi) = 0.5/255  
+
+	                      ₂₅₅
+		-0.5 * -log₂0.5 + -Σ 1/255 * -log₂1/255 =
+		                   ⁰
+		0.5 + -4.49 ≈ 5b -> najboljse mozno kodiranje	
+
+#### Kako Zakodirati
+>Predpone besed morajo biti enolicne.
+
+#### Hufmanov Algoritem
+* Doloci kode tako da se proba cim bolj priblizat optimalnemu kodiranju.
+* Najbolj standardno kodiranje, prisotno v vseh formatih, ponavadi nekje na koncu (zip, jpeg).
+
+#### Aritmeticno Kodiranje
+* Kot biblija na meterski palici z zarezo
+* H264: Lahko namesto Hufmana
+* Ne da bitne kode za vsak posamezen simbol, ampak skupino sibolov
+
+### UNIVERZALNE KODE
+* V naprej dolocena kodiranja (abeceda,...)
+
+#### Rice
+* Manjse stevilke so bolj verjetne
+* FLAC, UTF-8: Razlicno stevilo bajtov za razlicen znak
+* Waveform - zvok: verjetnost vrednosti sempla ima peak na 0 in potem pada proti maxu in minu.
+
+### KODIRANJE S SLOVARJI
+* Entropijska Kodiranja: predvideva se medsebojno neodvisnost simbolov.
+* Neodvisnost ne drzi v tekstu, zvoku, slikah...
+	- Podzaporedja se velikokrat pojavijo -> dobijo key
+	- Zip (LZ77)
+	- Ustvarimo slovar in
+	- kodiramo kot pare: (koda, polozaj) -> (4,0),(3,5)
+* Dinamicni slovar: slovar se zgenerira glede na vsebino
+
+#### LZ77 (Zip)
+* Lampel-Ziv 1977
+	ABCDCDABCEBCDA
+	ABCD|  |  |
+	    v  v  +->(9,3,A)
+	(2,2,A)(6,2,E)
+* Nikoli ne gremo prevec nazaj gledat (buffer omejen na nekaj kilobajtov) (+ look ahead buffer)
+* Prvi kilobajt ponavadi pustimo nezakodiran
+* Kje je slovar? Slovar je impliciten, nimamo explicitne tabele!
+
+#### LZW
+* Lampel-Ziv-Welsch
+* Mal boljsi
+* Gif, Compress
+* Sproti gradi slovar
+
+### KODIRANJE RAZLIK
+* Razlike med sempli pri zvoku -> oblika grafa enaka kot pri razporeditvi vrednosti samo  se bolj spicast. -> Entropija je manjsa (nakljucen signal ima najvecjo entropino)
+* Entropija 16 bitnega zvoka je priblizno 14 bitov (Hufman)
+* FLAC -> 1:2 ≈ 8b
+* Entropija razlik semplov za 16 bitni signal je priblizno 11 bitov
+
+* Siva slika (8b):
+	- Entropija skor 8b
+	- Entropija razlik ≈ 4.5b
+* FLAC poskusa naredit funkcijo za nopovedovanje oblike funkcije (LPC - Linear Predictive Coding)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
