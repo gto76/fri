@@ -143,10 +143,10 @@ no skin, no camera  </p>
 
 <blockquote>
   <p>Device: Nexus S(4.0'', 480x800) <br />
-Target: Android 4.4.2 - api level 19
-CPU: Intel Atom (x86)
-Skin: No skin
-Ram: 343 vm heap 32
+Target: Android 4.4.2 - api level 19 <br />
+CPU: Intel Atom (x86) <br />
+Skin: No skin <br />
+Ram: 343 vm heap 32 <br />
 Internal Storage: 300</p>
 </blockquote>
 
@@ -155,7 +155,73 @@ Debuging: DDMS: Posiljanje fake koordinat,...</p>
 
 <p></blockquote></p>
 
+<h3>VAJE 3</h3>
+
+<ul>
+<li>Galaxy pad: andrioid 4.0.4 15-IceCreamSandwich</li>
+</ul>
+
+<p>Vsaka aktivnost ima manifest.xml</p>
+
+<h4>Komunikacija Med Aktivnostmi</h4>
+
+<ol>
+<li>Create new: other: android activity</li>
+<li>Hierarhical parent = kam gremo ce pritisnemo back button</li>
+<li>Button -> android:OnClick="startNewActivity" (method name)
+main.java -> public void startNewActivity(View v) { ... }</li>
+<li><p>Pozenemo novi activity:</p>
+
+<pre><code>Intent intent = new Intent(this, OtherActivity.class)
+startActivity(intent)
+</code></pre></li>
+<li><p>Pozenemo activity in posljemo podatke:</p>
+
+<pre><code>new Intent, new Bundle, bundle.putString(&lt;id&gt;, &lt;string&gt;),
+intent.putExtras(bundle), startActivity(intent)
+</code></pre></li>
+<li><p>V klicani aktivnosti preberemo podatke:</p>
+
+<pre><code>onCreate { getIntent, intente.getExtras, extras.getString(id) }
+</code></pre></li>
+<li><p>Iz klicane aktivnosti zelimo vrniti podatke (Naprimer klic aplikacije kamera, ki potem vrne fotko):</p>
+
+<pre><code>//A1-send:   
+startActivityForResult(intent, &lt;request-code&gt;: int)
+
+
+//A2-recieve: 
+onCreate { getIntent, intente.getExtras, extras.getString(id) }
+
+
+//A2-send: 
+new Intent, new Bundle, bundle.putString(&lt;id&gt;, string),
+intent.putExtras(bundle), setResult(RESULT_OK, intent), finish
+
+
+//A1-recieve: 
+onActivityResult(int requestCode, int resultCode, Intent intent) {
+    if (requestCode == &lt;request-code&gt;)
+        if (resultCode == RESULT_OK)
+            String result = intent.getStringExtra(&lt;id&gt;)
+}
+</code></pre></li>
+</ol>
+
+<h4>Ohranjanje stanj ob unicenju in ponovnem zagonu</h4>
+
+<ul>
+<li>Ce napravo obrnemo se klice onCreate!</li>
+</ul>
+
 <h2>SEMINARSKA</h2>
+
+<ul>
+<li>Osnoven del 6 tock</li>
+<li>Dodatno 4 tocke - oddaja sredi decembra</li>
+</ul>
+
+<hr />
 
 <blockquote>
   <p>Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru</p>

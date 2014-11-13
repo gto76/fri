@@ -38,8 +38,11 @@ Priblizno 7 obveznih vaj.
 
 Poudarek bo na povezovanju in uporabi različnih tehnologij pri razvoju spletnih poslovnih aplikacij.
 
-### Programska oprema
+* 1.Seminarska: Osnoven IRC  
+* 2.Seminarska: Nadgraditev z bazo  
+* 3.Seminarska: Poljubna nadgradnja (Android)  
 
+### Programska oprema
 Programska oprema je dosegljiva preko programa [MSDNAA](http://www.fri.uni-lj.si/si/fakulteta/program_msdnaa/):
 
 * Microsoft Visual Studio 2012 (Ultimate)
@@ -90,11 +93,6 @@ V kolikor imate z dostopom do MSDNAA težave pišite na email: msdnaa@fri.uni-lj
 * Range Validator: Years
 * Regular Expression Validator (email: ".*@.*\\..*")
 * Validation summary
-
-### Vaje 3
-* 1.Seminarska: Osnoven IRC  
-* 2.Seminarska: Nadgraditev z bazo  
-* 3.Seminarska: Poljubna nadgradnja (Android)  
 
 ### Vaje 4
 * Slavko Zitnik

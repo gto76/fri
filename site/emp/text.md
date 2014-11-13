@@ -49,19 +49,71 @@ Virtualna naprava -> Link v prosojnicah, pospesevalnik
 
 >Na zadnje mi je dalala:
 >>Device: Nexus S(4.0'', 480x800)  
-Target: Android 4.4.2 - api level 19
-CPU: Intel Atom (x86)
-Skin: No skin
-Ram: 343 vm heap 32
+Target: Android 4.4.2 - api level 19  
+CPU: Intel Atom (x86)  
+Skin: No skin  
+Ram: 343 vm heap 32  
 Internal Storage: 300
-
 
 >Zelimo da LogCat Loger laufa (da dela println -> tag.system.out)  
 Debuging: DDMS: Posiljanje fake koordinat,...
 
+### VAJE 3
+
+* Galaxy pad: andrioid 4.0.4 15-IceCreamSandwich
+
+Vsaka aktivnost ima manifest.xml
+
+#### Komunikacija Med Aktivnostmi
+
+1. Create new: other: android activity
+2. Hierarhical parent = kam gremo ce pritisnemo back button
+3. Button -> android:OnClick="startNewActivity" (method name)
+	main.java -> public void startNewActivity(View v) { ... }
+4. Pozenemo novi activity:
+
+		Intent intent = new Intent(this, OtherActivity.class)
+		startActivity(intent)
+
+5. Pozenemo activity in posljemo podatke:
+
+		new Intent, new Bundle, bundle.putString(<id>, <string>),
+		intent.putExtras(bundle), startActivity(intent)
+
+6. V klicani aktivnosti preberemo podatke:
+
+		onCreate { getIntent, intente.getExtras, extras.getString(id) }
+
+7. Iz klicane aktivnosti zelimo vrniti podatke (Naprimer klic aplikacije kamera, ki potem vrne fotko):
+
+		//A1-send:   
+		startActivityForResult(intent, <request-code>: int)
+
+		//A2-recieve: 
+		onCreate { getIntent, intente.getExtras, extras.getString(id) }
+
+		//A2-send: 
+		new Intent, new Bundle, bundle.putString(<id>, string),
+		intent.putExtras(bundle), setResult(RESULT_OK, intent), finish
+
+		//A1-recieve: 
+		onActivityResult(int requestCode, int resultCode, Intent intent) {
+			if (requestCode == <request-code>)
+				if (resultCode == RESULT_OK)
+					String result = intent.getStringExtra(<id>)
+		}
+
+#### Ohranjanje stanj ob unicenju in ponovnem zagonu
+* Ce napravo obrnemo se klice onCreate!
+
 
 SEMINARSKA
 ----------
+
+* Osnoven del 6 tock
+* Dodatno 4 tocke - oddaja sredi decembra
+
+-----------
 
 >Kar se tiče aplikacije, napisat pa oddat jo morš na zagovoru
 
