@@ -47,6 +47,15 @@ Virtualna naprava -> Link v prosojnicah, pospesevalnik
 >>SD: 16 MB  
 >>no skin, no camera  
 
+>Na zadnje mi je dalala:
+>>Device: Nexus S(4.0'', 480x800)  
+Target: Android 4.4.2 - api level 19
+CPU: Intel Atom (x86)
+Skin: No skin
+Ram: 343 vm heap 32
+Internal Storage: 300
+
+
 >Zelimo da LogCat Loger laufa (da dela println -> tag.system.out)  
 Debuging: DDMS: Posiljanje fake koordinat,...
 

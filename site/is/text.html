@@ -128,7 +128,8 @@ Gregor Weiss <br />
 
 <h2>VAJE</h2>
 
-<p>Udeležba na laboratorijskih vajah mora biti vsaj 75%.</p>
+<p>Udeležba na laboratorijskih vajah mora biti vsaj 75%.
+Priblizno 7 obveznih vaj.</p>
 
 <p>Poudarek bo na povezovanju in uporabi različnih tehnologij pri razvoju spletnih poslovnih aplikacij.</p>
 
@@ -184,6 +185,49 @@ Gregor Weiss <br />
 
 <pre><code>    Application["naziv"] = "grof"...
 </code></pre></li>
+</ul>
+
+<h4>Validacija Vnosa</h4>
+
+<ul>
+<li>Pri uporabniku, seveda je treba kasneje na serverju se enkrat preverit vnose.</li>
+<li>Required Field Validator
+<ul>
+<li>ControlToValidate = "TextBox1"</li>
+<li>Error Message = "Please enter value"</li>
+<li>Is Valid</li>
+<li>Validate</li>
+<li>On Play</li>
+</ul></li>
+<li>Compare Validator: Compares two fields (repeat your email)</li>
+<li>Range Validator: Years</li>
+<li>Regular Expression Validator (email: ".<em>@.</em>\..*")</li>
+<li>Validation summary</li>
+</ul>
+
+<h3>Vaje 3</h3>
+
+<ul>
+<li>1.Seminarska: Osnoven IRC  </li>
+<li>2.Seminarska: Nadgraditev z bazo  </li>
+<li>3.Seminarska: Poljubna nadgradnja (Android)  </li>
+</ul>
+
+<h3>Vaje 4</h3>
+
+<ul>
+<li>Slavko Zitnik</li>
+<li>Virtualni strezniki bojo na faxu</li>
+</ul>
+
+<h4>Povezava z bazo</h4>
+
+<ul>
+<li>Dodamo obstojeco bazo v projekt z - App_Data: Add Existing Item...: Northwind.mdf</li>
+<li>Nevidni Gradnik za povezavo do baze - Data: SqlDataSource</li>
+<li>Gradnik za prikaz podatkov v tabeli - Data: GridView</li>
+<li>Primer regexa v SQL stavku, % je enako kot * - LIKE '%bla%'</li>
+<li>Imamo Product tabelo in zelimo zamenjat suplierId in categoruId z njunima imenoma. Za to rabimo se dva SqlDataSourca, in v vsakemu odkljukamo zeljene columne. Pri product SqlDataSourcu moramo se - advanced: generate insert, update, delete...!</li>
 </ul>
 
 <h2>KOLOKVIJ</h2>

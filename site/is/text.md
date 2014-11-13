@@ -34,6 +34,7 @@ Informacijski Sistemi
 VAJE
 ----
 Udeležba na laboratorijskih vajah mora biti vsaj 75%.
+Priblizno 7 obveznih vaj.
 
 Poudarek bo na povezovanju in uporabi različnih tehnologij pri razvoju spletnih poslovnih aplikacij.
 
@@ -76,6 +77,35 @@ V kolikor imate z dostopom do MSDNAA težave pišite na email: msdnaa@fri.uni-lj
 * Aplikacijska spremenljivka - vidna v vseh sejah
 
 			Application["naziv"] = "grof"...
+
+#### Validacija Vnosa
+* Pri uporabniku, seveda je treba kasneje na serverju se enkrat preverit vnose.
+* Required Field Validator
+	- ControlToValidate = "TextBox1"
+	- Error Message = "Please enter value"
+	- Is Valid
+	- Validate
+	- On Play
+* Compare Validator: Compares two fields (repeat your email)
+* Range Validator: Years
+* Regular Expression Validator (email: ".*@.*\\..*")
+* Validation summary
+
+### Vaje 3
+* 1.Seminarska: Osnoven IRC  
+* 2.Seminarska: Nadgraditev z bazo  
+* 3.Seminarska: Poljubna nadgradnja (Android)  
+
+### Vaje 4
+* Slavko Zitnik
+* Virtualni strezniki bojo na faxu
+
+#### Povezava z bazo
+* Dodamo obstojeco bazo v projekt z - App_Data: Add Existing Item...: Northwind.mdf
+* Nevidni Gradnik za povezavo do baze - Data: SqlDataSource
+* Gradnik za prikaz podatkov v tabeli - Data: GridView
+* Primer regexa v SQL stavku, % je enako kot * - LIKE '%bla%'
+* Imamo Product tabelo in zelimo zamenjat suplierId in categoruId z njunima imenoma. Za to rabimo se dva SqlDataSourca, in v vsakemu odkljukamo zeljene columne. Pri product SqlDataSourcu moramo se - advanced: generate insert, update, delete...!
 
 
 KOLOKVIJ

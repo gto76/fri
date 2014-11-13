@@ -635,11 +635,13 @@ P(Xi) = 0.5/255  </p>
 <h4>LZ77 (Zip)</h4>
 
 <ul>
-<li>Lampel-Ziv 1977
-ABCDCDABCEBCDA
+<li><p>Lampel-Ziv 1977  </p>
+
+<pre><code>ABCDCDABCEBCDA
 ABCD|  |  |
-    v  v  +->(9,3,A)
-(2,2,A)(6,2,E)</li>
+    v  v  +-&gt;(9,3,A)
+(2,2,A)(6,2,E)
+</code></pre></li>
 <li>Nikoli ne gremo prevec nazaj gledat (buffer omejen na nekaj kilobajtov) (+ look ahead buffer)</li>
 <li>Prvi kilobajt ponavadi pustimo nezakodiran</li>
 <li>Kje je slovar? Slovar je impliciten, nimamo explicitne tabele!</li>

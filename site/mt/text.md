@@ -336,11 +336,12 @@ P(Xi) = 0.5/255
 * Dinamicni slovar: slovar se zgenerira glede na vsebino
 
 #### LZ77 (Zip)
-* Lampel-Ziv 1977
-	ABCDCDABCEBCDA
-	ABCD|  |  |
-	    v  v  +->(9,3,A)
-	(2,2,A)(6,2,E)
+* Lampel-Ziv 1977  
+
+		ABCDCDABCEBCDA
+		ABCD|  |  |
+		    v  v  +->(9,3,A)
+		(2,2,A)(6,2,E)
 * Nikoli ne gremo prevec nazaj gledat (buffer omejen na nekaj kilobajtov) (+ look ahead buffer)
 * Prvi kilobajt ponavadi pustimo nezakodiran
 * Kje je slovar? Slovar je impliciten, nimamo explicitne tabele!
