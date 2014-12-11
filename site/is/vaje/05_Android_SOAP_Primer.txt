@@ -1,0 +1,212 @@
+*** PRI KOPIRANJU BODITE POZORNI NA UPORABLJENA POIMENOVANJA IN JIH PO POTREBI SPREMENITE! ***
+
+*** ksoap2 dobite na naslovu https://code.google.com/p/ksoap2-android/ ***
+
+*** da bi koda delovala morate pripraviti ustrezno storitev v .NET - lahko uporabite kar storitev, ki se generira kot primer in vkljuèuje operacijo GetData ***
+
+
+*** Vsebina AndroidManifest.xml ***
+*** Bodite pozorni na permission in na .ResultListActivity!***
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.webserviceclient1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".WebServiceTestActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultListActivity"
+            android:label="@string/resultlist_activity_label">
+        </activity>
+    </application>
+</manifest>
+
+*** Vsebina main.xml *** (res/layout/main.xml)
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/searchStringEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Enter number:" />
+
+    <Button
+        android:id="@+id/searchStringButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchStringEditText"
+        android:text="Confirm" />
+
+</RelativeLayout>
+
+
+
+
+
+*** Vsebina WebServiceTestActivity.java *** (src/...)
+
+package test.webserviceclient1;
+
+import org.ksoap2.SoapEnvelope;
+import org.ksoap2.serialization.SoapObject;
+import org.ksoap2.serialization.SoapSerializationEnvelope;
+import org.ksoap2.transport.HttpTransportSE;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.InputType;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class  WebServiceTestActivity extends Activity
+{
+private static String SOAP_ACTION ="http://tempuri.org/IService1/GetData";
+private static String NAMESPACE = "http://tempuri.org/";
+private static String METHOD_NAME = "GetData";
+
+// ****** ZAMENJAJ IP!
+private static String URL = "http://<<<****localhost****>>>:8732/Design_Time_Addresses/WcfServiceLibraryZaAndroid/Service1/";
+
+
+  @Override
+  public void onCreate(Bundle savedInstanceState)
+  {
+     super.onCreate(savedInstanceState);
+     setContentView(R.layout.main);
+     final Button searchButton = (Button) findViewById(R.id.searchStringButton);
+     final EditText searchStringEditText = (EditText) findViewById(R.id.searchStringEditText);        
+     searchStringEditText.setInputType(InputType.TYPE_CLASS_NUMBER);
+     searchButton.setOnClickListener(new OnClickListener()
+     {
+         public void onClick(View v)
+         {
+             // Ob kliku na tipko se izvede spodnja koda 
+             String searchString = searchStringEditText.getText().toString();
+             
+             //Inicializiraj SOAP request in dodaj parametre
+             SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
+             
+             if(searchString != null && searchString.length()>0	){
+
+		         //request.addProperty("searchString", searchString);
+		         request.addProperty("value", Integer.parseInt(searchString));
+		         
+		         //Doloèi razlièico SOAP request-a
+		         SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+		         envelope.dotNet=true;
+		         envelope.setOutputSoapObject(request);
+		        
+		         //HttpTransportSE omogoèi prenos preko interneta
+		         HttpTransportSE androidHttpTransport = new HttpTransportSE(URL);
+		         try
+		         {
+		           //To je dejanski klic spletne storitve
+		           androidHttpTransport.call(SOAP_ACTION, envelope);
+		         }
+		         catch (Exception e) {e.printStackTrace();}
+		         // Poberi rezultat, ki ga vrne spletna storitev
+		         SoapObject result = (SoapObject)envelope.bodyIn;
+		         if (result!=null)
+				 {
+		             Bundle bEnteredData = new Bundle();
+		             bEnteredData.putString("entered", result.getPropertyAsString("GetDataResult"));
+		             Intent enteredIntent = new Intent(WebServiceTestActivity.this, ResultListActivity.class);
+		             enteredIntent.putExtras(bEnteredData);
+		   
+		             searchStringEditText.setText("");
+		
+		             startActivity(enteredIntent);
+				 }
+		         else
+		         {
+		        	 Toast.makeText(WebServiceTestActivity.this, "Web service error!", Toast.LENGTH_SHORT).show();
+		         }
+		     }
+             else
+		     {
+		    	 Toast.makeText(WebServiceTestActivity.this, "Please enter a number !", Toast.LENGTH_SHORT).show();}
+        	 }
+
+       });
+
+    }
+	
+}
+
+
+*** Vsebina ResultListActivity.java *** (src/...)
+
+package test.webserviceclient1;
+
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+
+public class ResultListActivity extends ListActivity {
+	   @Override
+	    public void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        
+	        //Prikaži podatke v obliki enostavnega seznama
+	        Bundle dataReceived = getIntent().getExtras();
+	        String[] responseList = new String[1];
+	        responseList[0] = dataReceived.getString("entered");;
+	        setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, responseList));
+
+	   }
+
+}
+
+
+
+*** Vsebina Strings.xml *** (res/values)
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WebServiceTestActivity!</string>
+    <string name="app_name">WebServiceTest</string>
+    <string name="resultlist_activity_label">SOAP response</string>
+        
+
+</resources>
