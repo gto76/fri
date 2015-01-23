@@ -1,0 +1,124 @@
+ISKANJE PO ZVOCNIH POSNETKIH
+============================
+1. audio identification: iskanje tocno dolocenega posnetka (shazam)
+2. posci vse drube izvedbe skladbe
+
+1. IDENTIFICATION:
+- izracunamo hash za vsak par vrhov v originalnem posnetku,
+- ustvarimo obrnjen indeks iz hasha do dokumenta in lokacije v posnetku,
+- gremo cez vsak par vrhov v semplu, poquerijamo obrnjen indeks in
+naredimo presek (in gledamo ce se lokacije v posnetku ujemajo z lokacijami v semplu)
+
+2. ISKANJE PODOBNIH POSNETKOV
+- mormo zracunat znacilke
+- kroma vektorji:
+	sestejemo vse oktave v sprektru => dobimo samo eno vrednost za ton:
+	(220, 440, 660, 880)
+	12 dimenzionalni vektor -> kroma vektor (relativno neodvisno od instrumenta)
+	z semplom gremo cez posnetek in opazujemo razdaljo med semplom in oknom
+	tempo mormo se upostevat -> time warpint (podobno kot levensteinova razdalja) izracuna se matrika razdalj in potem se isce iptimalna pot cez matriko (dinamicno programiranje)...
+	Izracunamo razdalje (podobnosti) med vsemi kromavektorji (stolpci) v semplu in v originalu
+	lahko tudi brez time warpinga, ce enostavno veckrat iscemo z razlicno raztegnjenim querijem
+
+3. ISKANJE PESMI Z ENAKIMI LASTNOSTMI
+
+
+STISKNJE ZVOKA
+==============
+1. Stiskanje govora (mobiteli)
+2. Mp3
+
+1. GOVOR
+--------
+- Zapomnemo si kako je nastal...
+- sch -> glasilke odprte, nic ne kontrolirajo (nezvocniki)
+- glasilke drugace dolocijo visino (zvocniki) -> pulz
+- usta, jezik,... se sfiltrijajo signal, ki prihaja iz glasilk (a,o... -> do filtra imata enak signal)
+
+Za zgenerirat rabimo:
+ali je zvonik (frekfenca)/nezvocnik -> jakost -> filter
+
+Razdelimo signal na majhne koscke (10 ms)
+in za vsak koscek shranimo parametre: zvocnik.nezvocnik, amplituda, filter, frekfenca. (wave se ne shrani)
+
+LPC (linear predictive coding)
+Z tem algoritmom zracunamo kaksen je filter (najbolj komplicirana stvar)
+
+- filter z neskoncnim enotnim odzivom (feedback)
+- za vsak koscek si mormo zapomnit vse vrednosti (~10)
+
+        Qi
+		|
+Un -> FILTER -> Sn (izhod poznamo)
+
+Mormo zvedet Qi parametre
+
+Sn = Un + vsota od 1 do n ai Sn-i
+a so neznanke, Se poznamo (Ui tudi nekak poznamo) (kar naj bi prislo iz pljuc)
+
+matlab -> lpc()
+
+avtokorelacija -> kako zracunamo ce je signal periodicen (pomnoziz signal z zamaknjenim samim sabo -> dobimo najvecjo vrednost ko ga premaknem tocno za eno periodo)
+-> ce je nezvocnik avtokorelacija nima nekega vrha
+
+Kodeki:
+
+najbolj lahko skrcimo na 2.4 kb/s
+-> za posamezen frame porabimo 48 bitov (10 parametrov filtra)
+- zelo slabo
+
+celp, 4.8kb
+- ze veliko boljs
+- mal vec variant osnovnih signalov (da se lazje razlicni glasovi generirajo)
+
+3gp -> ce posnamemo zvok na mobitelu, temelji na temu
+
+
+2.MP3
+-----
+mpeg-1 audio
+3je nivoji
+mp3 = mpeg-1 layer III
+
+- cesar ne slismo ni potrebno kodirat
+- tudi tisto kar slismo lahko kodiramo razlicno natancno (naprimer kolk je glasno)
+
+1. stvari ki so pod fonovo krivuljo ne rabimo kodirat
+2. frekfencno maskiranje (sosednji toni zraven glasnega niso slisni) -> bistveno pri kodekih. Visje ko gremo, bol siroko je razmerje.
+3. casovno maskiranje
+-> 3d krivulja iz obeh maskiranj
+
+MPEG1 - layer I
+
+eno okno 12 semplov / 32 frekfencnih odsekov
+najdemo vrhove spektra
+za vsakeg vrh zracunamo maskirno krivuljo (psihoakusticni model)
+vse linije -> max (ena krivulja) -> global masking treshold GMR
+izracuna se signal to mask ratio SMR
+za vsak frekfencni odek zracunamo smr
+
+mp3
+se casovno maskiranje,
+neka kosinusna transfomacija
+in hufmann na konc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

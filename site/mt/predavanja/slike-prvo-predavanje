@@ -1,0 +1,52 @@
+SLIKE
+=====
+
+VIDEO
+=====
+
+barvno informacijo procesiramo pocasneje kot svetlost
+16 fps vs more than 16
+
+zato na televiziji okoli 50 Hz (da nam ne utripa)
+
+Film se predvaja na 48 (sneman na 24)
+
+zato re ne uporabla rgb ampak:
+YCbCr (trije cinci iz video naprav)
+Y je svetlost
+Cb,Cr - v kombinaciji data barvo
+
+Zato ker smo bol obcutlivi na svetlost:
+svetlost se manj zakompresira kot barvo
+
+Podvzorcenje barvitosti: razmerje med stevilom bitov za svetlost in za barvo
+= chroma subsampling (tudi jpeg in mpeg)
+4:4:4 -> polna locljivost (y,Cb,Cr)
+4:2:2 -> Cb in Cr vzorcimo kot vsak drugi piksel
+...
+
+progresive - (progresivni zapis) (v glavnem samo se p)
+interlace - (prepretajoci)
+-> problem iz i v p
+
+
+OBDELAVA SLIK
+=============
+
+1. point procesing (photo shopL: image -> adjustement) - obdelava pislov neodvisno od sosedov. Negariv c = 1-r, thresholding, greyscale (razlicna vloga barv zaradi cloveske percepcije)
+
+2. Filtri
+
+gamma:
+pri majhnih svetlostih smo bolj obcutljuvi na razlike kot pri velikih svetlostih
+-> zato se uzame logaritem gamma 2.2 -> majhne svetlosti predstavmo z vec biti in velike vrednosti manjse. (vsaka slika iz kakrsne kol naprave ima gama korekcijo) -> potrebno pretvarjato
+(photoshop lahko damo cez dodaten gama filter)
+
+
+historgram stretching barvni
+damo v ccrcx space, razsirmo samo cc in prekonvertiramo nazaj 
+
+
+
+
+
