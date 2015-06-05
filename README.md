@@ -1,12 +1,12 @@
 FRI VSš 2014/15
----------------
+===============
 
 * Informacije o predmetih
 * Izpitna vprašanja
 * Izpiski
 
 
-[webpage](http://gto76.github.io/fri/index.html)
+####[WEBPAGE](http://gto76.github.io/fri/index.html)
 
 ----------------
 
@@ -20,10 +20,11 @@ Templates directory contains a file called `head` that defines few CSS propertie
 
 In `scripts` directory there is also a `pre-commit` hook that can be linked to `.git/hooks` directory, in order for git to check if site is up to date before every commit. It will run `make` command and abort the commit it if is not.
 
-### How To Run:
-```
-$ sudo apt-get install markdown
-$ git clone https://github.com/gto76/fri.git
-$ cd fri
-$ google-chrome index.html
+How To Run
+----------
+```bash
+sudo apt-get install markdown
+git clone https://github.com/gto76/fri.git
+cd fri
+google-chrome index.html
 ```
