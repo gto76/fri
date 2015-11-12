@@ -22,9 +22,9 @@ In `scripts` directory there is also a `pre-commit` hook that can be linked to `
 
 How To Run
 ----------
-```bash
-sudo apt-get install markdown
-git clone https://github.com/gto76/fri.git
-cd fri
-google-chrome index.html
+```
+$ sudo apt-get install markdown
+$ git clone https://github.com/gto76/fri
+$ cd fri
+$ google-chrome index.html
 ```
